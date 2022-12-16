@@ -1,0 +1,24 @@
+.hero-cont-wrapper{
+    background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.7)),url('../images/main/contacts-bg.jpg');
+    background-position:right 100%;
+    background-size: cover;
+}
+.contacts-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(15rem,100%),1fr));
+    gap:2rem;
+    margin-block:1.5rem;
+}
+.contact-item{
+    border-radius: 10px;
+    background-color:var(--clr-text);
+    padding:1em;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.con-title{
+    font-size:1.5rem;
+    margin-block:1rem;
+}
+.con-svg{inline-size:30%;aspect-ratio: 1;display: block;margin-inline:auto;}
