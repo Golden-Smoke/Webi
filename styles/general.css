@@ -260,7 +260,7 @@ footer *{color:var(--clr-primary);}
      }
      .nav-wrapper.scroll-down{translate:0}
 }
-@media screen and (max-width:730px) {
+@media screen and (max-width:800px) {
     .ham-wrapper{display:block; }
     .nav-menu{ display:none;}
     .nav-wrapper{justify-content: space-between;}  

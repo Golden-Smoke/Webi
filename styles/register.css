@@ -1,16 +1,60 @@
-/* body{background-size:cover;background-repeat: no-repeat;}
-@media  screen and (max-width:928px) {
-    body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/reg-back.webp');
-    }
+body{
+    min-block-size: 100vh;
+    background-size: cover;
 }
-
-@media screen and (max-width:1280px) {
+@media screen and (max-width:930px) {
     body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/reg-back.webp');
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-650w.webp');
+    }     
+}
+@media screen and (min-width:930px) and (max-width:1280px) {
+    body{
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-920w.webp');
+        background-position:center 30%;
     }
 }
 @media screen and (min-width:1280px){
     body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/reg-back.webp');
-    }} */
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-1400w.webp');
+        background-position:center 30%;
+    }
+}
+
+
+.reg-wrapper{
+    block-size:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-field{
+    position:relative;
+    margin-block:1rem;
+    border-radius: 10px;
+}
+.input-field{
+    inline-size:100%;
+    block-size:100%;
+    display:block;
+    font-size:1.5rem;
+    padding:.2em .5em;
+    border-radius: inherit;
+}
+.placeholder{
+    position: absolute;
+    z-index:2;
+    pointer-events: none;
+    color:grey;
+    top:50%;
+    left:5%;
+    translate:-5% -50%;
+    transition:top 250ms,left 250ms,scale 250ms;
+}
+.placeholder.focused{
+    top:0;
+    left:2%;
+    color:black;
+    scale:.8;
+}
+
+

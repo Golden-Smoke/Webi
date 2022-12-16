@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="apple-touch-icon" href="../images/main/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <script src="../scripts/register.js" defer></script>
+    <script src="../scripts/layout.js" defer></script>
     <title>Chef Cooking - Register</title>
 </head>
 <body>
@@ -18,10 +24,10 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-link">
-                        <a href="#">Home</a> 
+                        <a href="./index.html">Home</a> 
                    </li>
                    <li class="nav-link">
-                        <a href="#recipes">Recipes</a>
+                        <a href="./index.html#recipes">Recipes</a>
                    </li>
                    <li class="nav-link"> 
                         <a href="./gallery.html">Gallery</a> 
@@ -30,7 +36,7 @@
                          <a href="./contacts.html">Contacts</a>
                    </li>
                    <li class="nav-link">
-                        <a href="#faq">FAQ</a>
+                        <a href="./index.html#faq">FAQ</a>
                    </li>
                    <li class="nav-link">
                     <a href="./about.html">About</a>
@@ -50,19 +56,13 @@
                 </div>
             </div>  
         </nav>
-        <div class="hero-cont-wrapper">
-            <div class="hero-cont">
-                <h1>Register</h1>
-                <p>Create your account for Cooking Chef</p>  
-            </div>
-        </div>
         <div class="login">
             <div class="login-black-wrap"></div>
             <div class="login-container">
                 <div>
                     <img class="login-img" src="../images/main/logo.webp" width="70px" height="70px" alt="cook-logo.svg">
                 </div>
-                <form action="" class="login-form" method="post">
+                <form action="" class="login-form">
                     <input class="login-input" type="email" placeholder="Email" tabindex="-1">
                     <input class="login-input" type="password" placeholder="Password" tabindex="-1">
                 </form>
@@ -72,7 +72,32 @@
         </div>
     </header>
     <main>
-        <h2>Create new account</h2>
+        <div class="reg-wrapper">
+            <div class="reg-info">
+                 <h1>Register</h1>
+                <p>Create new account!</p>
+            </div>
+            <form action="" method="post">
+                <div class="form-field">
+                    <input class="input-field" type="text" required>
+                    <span class="placeholder">First Name</span>
+                </div>
+                <div class="form-field">
+                    <input class="input-field" type="text" required>
+                    <span class="placeholder">Last Name</span>
+                </div>
+                <div class="form-field">
+                    <input class="input-field" type="email" required>
+                    <span class="placeholder">Email</span>
+                </div>
+                <div class="form-field">
+                    <input class="input-field" type="password" required>
+                    <span class="placeholder">Password</span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
+  
 </body>
 </html>
