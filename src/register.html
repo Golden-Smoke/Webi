@@ -7,7 +7,8 @@
     <link rel="apple-touch-icon" href="../images/main/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/main/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/register.css">
     <link rel="stylesheet" href="../styles/general.css">
     <script src="../scripts/register.js" defer></script>
@@ -77,24 +78,24 @@
                  <h1>Register</h1>
                 <p>Create new account!</p>
             </div>
-            <form action="" method="post">
+            <form class="reg-form" action="#" method="post">
                 <div class="form-field">
-                    <input class="input-field" type="text" required>
-                    <span class="placeholder">First Name</span>
+                    <span id="first-name" class="placeholder">First Name</span>
+                    <input aria-placeholder="First Name" aria-labelledby="first-name" class="input-field" type="text" required>
                 </div>
                 <div class="form-field">
-                    <input class="input-field" type="text" required>
-                    <span class="placeholder">Last Name</span>
+                    <span id="last-name" class="placeholder">Last Name</span>
+                    <input aria-placeholder="Last Name" aria-labelledby="last-name" class="input-field" type="text" required>
                 </div>
                 <div class="form-field">
-                    <input class="input-field" type="email" required>
-                    <span class="placeholder">Email</span>
+                    <span id="email" class="placeholder">Email</span>
+                    <input aria-placeholder="Email" aria-labelledby="email" class="input-field" type="email" required>
                 </div>
                 <div class="form-field">
-                    <input class="input-field" type="password" required>
-                    <span class="placeholder">Password</span>
+                    <span id="password" class="placeholder">Password</span>
+                    <input aria-placeholder="Password" aria-labelledby="password" class="input-field" type="password" minlength="10" required>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn-submit">Submit</button>
             </form>
         </div>
     </main>
