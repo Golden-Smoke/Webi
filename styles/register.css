@@ -2,30 +2,16 @@ body{
     min-block-size: 100vh;
     background-size: cover;
 }
-@media screen and (max-width:930px) {
-    body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-650w.webp');
-    }    
-}
-@media screen and (min-width:930px) and (max-width:1280px) {
-    body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-920w.webp');
-        background-position:center 30%;
-    }
-}
-@media screen and (min-width:1280px){
-    body{
-        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-1400w.webp');
-        background-position:center 30%;
-    }
-}
 
 .reg-wrapper{
-    block-size:100vh;
+    min-block-size:100vh;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap:wrap;
+}
+.reg-info{
+    margin-block:1.5rem;
 }
 .reg-form{
     background:rgb(241 210 167 / .8);
@@ -75,3 +61,22 @@ body{
     color:#fff;
 }
 
+@media screen and (max-width:930px) {
+    body{
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-650w.webp');
+    }
+    .reg-wrapper{  margin-block:calc(var(--size-nav) + 2rem); }
+       
+}
+@media screen and (min-width:930px) and (max-width:1280px) {
+    body{
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-920w.webp');
+        background-position:center 30%;
+    }
+}
+@media screen and (min-width:1280px){
+    body{
+        background-image:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5)),url('../images/main/cook-hero-img-1400w.webp');
+        background-position:center 30%;
+    }
+}
