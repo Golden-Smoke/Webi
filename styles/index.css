@@ -80,6 +80,7 @@ article.sec.reverse{ flex-wrap:wrap-reverse;}
     position:relative;
     background-color:brown;
     color:#fff;
+    padding-block:.2em;
 }
 .info-card--text{ padding-inline:1.5em;}
 
@@ -103,13 +104,16 @@ article.sec.reverse{ flex-wrap:wrap-reverse;}
     clip-path:polygon(100% 0%,50% 50%,100% 100%,0% 100%,0% 0%,100% 0%);
 }
 
+.bg-sec-secondary{
+    background-color:rgb(255 255 255 / .7);
+}
 
 .section--title{ font-size:2.5rem;}
 #faq .section--title{text-align: center;}
 section{ scroll-margin-block: 1.5rem;margin-block:2rem;}
    
 /* Recipes */
-.recipes{ overflow: hidden;}
+.recipes{ overflow: hidden;padding:1.2em}
 
 .recipes-grid{
     display:grid;
@@ -117,6 +121,9 @@ section{ scroll-margin-block: 1.5rem;margin-block:2rem;}
     grid-auto-flow: column;
     grid-auto-columns: 48%;
     transition:transform 250ms;
+}
+.rec-sec-text{
+    margin-block:1rem;
 }
 .recipe-card{
     position:relative;
@@ -229,6 +236,7 @@ section{ scroll-margin-block: 1.5rem;margin-block:2rem;}
     background-color:rgba(0,0,0,0.9);
 }
 /* FAQ */
+
 .faq-wrapper{
     inline-size:min(40rem,100%);
     margin-inline:auto;

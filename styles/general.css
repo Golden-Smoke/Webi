@@ -15,7 +15,7 @@
 *:not(i){ font-family: 'Montserrat',sans-serif;}
    
 html{ scroll-behavior: smooth;}
-   
+  
 body{ background-color:rgba(241, 210, 167,0.9);}
 
 a{
@@ -69,7 +69,7 @@ img{
 .nav-wrapper.scroll-up{ translate: 0;}
    
 .nav-wrapper.scroll-down{ translate:0 -100%;}
-   
+.nav-wrapper:focus-within{translate:0;}
 .logo-wrapper{ margin-left:1rem;}
    
 .nav-link.reg:not(.space){ margin-right:1rem;}
