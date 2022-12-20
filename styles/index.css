@@ -3,7 +3,7 @@
 /* Main */
 article.sec{
     display:flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-block:2rem; 
 }
@@ -27,7 +27,8 @@ article.sec.reverse{ flex-wrap:wrap-reverse;}
     flex-direction: column;
     gap:1rem;
     justify-content: center;
-    background-color:rgba(255,255,255,0.7); 
+    background-color:rgba(255,255,255,0.7);
+    line-height:1.5;
 }
 .article-link,.rec-content-btn{
     background-color:var(--clr-secondary);
@@ -47,8 +48,8 @@ article.sec.reverse{ flex-wrap:wrap-reverse;}
  
 .article-img{
     inline-size: 100%;
-    aspect-ratio: 16/9;
-    scale:1.1;
+    block-size:100%;
+    display: block;
     border-radius: inherit;
     object-fit:cover;  
 }
