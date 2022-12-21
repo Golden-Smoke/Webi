@@ -82,7 +82,7 @@ article.sec.reverse{ flex-wrap:wrap-reverse;}
     color:#fff;
     padding-block:.2em;
 }
-.info-card--text{ padding-inline:1.5em;}
+.info-card--text{ padding-inline:1.5em;line-height:1.5;}
 
 .info-card--title::before,
 .info-card--title::after{
@@ -124,6 +124,7 @@ section{ scroll-margin-block: 1.5rem;margin-block:2rem;}
 }
 .rec-sec-text{
     margin-block:1rem;
+    line-height:1.5;
 }
 .recipe-card{
     position:relative;
@@ -266,7 +267,7 @@ section{ scroll-margin-block: 1.5rem;margin-block:2rem;}
     overflow: hidden;
     transition:height 150ms ease-in-out,border-top 150ms ease-in-out;
 }
-.faq-answer{  padding:1em;}
+.faq-answer{  padding:1em;line-height:1.5;}
   
 /* Media-Queries */
 @media  screen and (max-width:928px) {
@@ -311,4 +312,4 @@ video{
         position:absolute;
         background:radial-gradient(circle at center,rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgb(241 210 167 / 0.5));
 }
-
+ 
