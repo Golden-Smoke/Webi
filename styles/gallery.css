@@ -88,6 +88,19 @@
     background-position-y: bottom;
 }
 
+.filter-wrap{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background:white;
+    inline-size:35rem;
+}
+.filter{flex-basis:20rem;}
+.filter-icon{display: flex;align-items: center;justify-content: center;gap:.5rem;}
+.filter-svg-wrap{ flex-basis:2rem;}
+.filter-svg{
+    inline-size:100%;
+}
 
 @media  screen and (max-width:1000px) {
     
