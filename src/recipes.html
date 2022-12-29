@@ -59,11 +59,12 @@
         </nav>
         <div class="hero-cont-wrapper">
             <div class="hero-cont">
-                <h1>Gallery</h1>
-                <p>Find amazing images of our recipes!</p>
+                <h1>Recipes</h1>
+                <p>Find all recipes here!</p>
                 <div class="recipe-search-wrap">
                     <input class="recipe-search" type="text" placeholder="Search for recipe">
                     <button class="search-btn" title="Search recipe" aria-label="search-button"><svg width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></button>
+                    <span data-set="error-message">Please enter valid search!</span>
                 </div>
                 
             </div>
@@ -86,9 +87,55 @@
     </header>
 
 <main>
-    <div class="container">
+    <div class="container narrow">
         <div class="cards">
-            <a href="#" class="card-link">
+             
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/eggs-img-650w.webp" alt="eggs.webp">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Eggs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/pancakes-img-650w.jpg" alt="pancakes.webp">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Pancakes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/meat-650w.webp" alt="meat.webp">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">BBQ Meat</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/cobba-salad-650w.jpg" alt="cobba-salad.webp">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Cobba Salad</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card-img">
                         <img src="../images/recipes/burrito-650w.webp" alt="burrito.webp">
@@ -97,34 +144,71 @@
                     <div class="card-body">
                         <h2 class="card-title">Burrito</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
                     </div>
                 </div>
-            </a>
-            <a href="#" class="card-link">
                 <div class="card">
                     <div class="card-img">
-                        <img src="../images/recipes/burrito-650w.webp" alt="burrito.webp">
+                        <img src="../images/recipes/cake-650w.jpg" alt="cake.webp">
                         <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">Meat</h2>
+                        <h2 class="card-title">Cake</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
                     </div>
                 </div>
-            </a>
-            <a href="#" class="card-link">
                 <div class="card">
                     <div class="card-img">
-                        <img src="../images/recipes/burrito-650w.webp" alt="burrito.webp">
+                        <img src="../images/recipes/chicken-650w.jpg" alt="chicken.jpg">
                         <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">Salad</h2>
+                        <h2 class="card-title">Grilled Chicken</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
                     </div>
                 </div>
-            </a>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/chili-650w.jpg" alt="chili.jpg">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Chili</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/salmon-650w.jpg" alt="salmon.jpg">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Grilled Salmon</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/recipes/fruit-salad-650w.jpg" alt="fruit-salad.jpg">
+                        <svg class="card-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--clr-text)" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Fruit Salad</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores odit cum inventore recusandae ipsa unde accusamus repellat ad debitis, iure consectetur optio assumenda quod nulla natus! Omnis, deleniti obcaecati.</p>
+                        <a href="#" class="card-btn-link">View Recipe</a>
+                    </div>
+                </div>
+                
          </div>
+         <div data-set="not-found-content">
+             <h2 class="not-found-title">Test</h2>
+
+         </div>
+        
     </div>
 </main>
 <footer>
