@@ -3,16 +3,22 @@ const search_btn = document.querySelector('.search-btn')
 const errorMessage = document.querySelector('[data-set="error-message"]')
 const searchInput = document.querySelector('.recipe-search')
 const notFound = document.querySelector('[data-set="not-found-content"]')
+const title = notFound.querySelector('.not-found-title')
+const errMessage = notFound.querySelector('.not-found-message')
+
+window.addEventListener('load',() =>{
+    searchInput.value = ''
+})
 
 searchInput.addEventListener('focus',() =>{
     errorMessage.classList.remove('show')
 })
 
 search_btn.addEventListener('click',() =>{
-    let inputVal = document.querySelector('.recipe-search').value.toLowerCase()
+    let inputVal = searchInput.value.toLowerCase()
 
     if(inputVal.trim() == ''){
-        document.querySelector('.recipe-search').value = ''
+        searchInput.value = ''
         errorMessage.classList.add('show')
         setTimeout(() =>{
             errorMessage.classList.remove('show')
@@ -37,6 +43,8 @@ search_btn.addEventListener('click',() =>{
     })
 
     if(filteredCards.length == 0){
+        errMessage.textContent = `"${searchInput.value}"`
+        title.textContent = "Sorry,there are no results for"
         notFound.classList.add('show')
         return
     }

@@ -1,5 +1,11 @@
 const fields = document.querySelectorAll('.form-field')
+const input_fields = document.querySelectorAll('.input-field')
 
+window.addEventListener('load',()=>{
+    input_fields.forEach(field =>{
+        field.value = ''
+    })
+})
 fields.forEach(field =>{
     const placeholder = field.querySelector('.placeholder')
    

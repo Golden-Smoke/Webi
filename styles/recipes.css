@@ -103,10 +103,31 @@
     border-radius:var(--custom-bord-radius);
 }
 
-[data-set="not-found-content"]{ display:none;}
+[data-set="not-found-content"]{
+     display:none;
+     inline-size:min(40rem,100%);
+     margin-inline:auto;
+     margin-block-end:1rem;
+}
 [data-set="not-found-content"].show{ display:block;}
 
+.not-found-text{
+    display: flex;
+    gap:.5rem;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.7rem;
+    margin-block:.5rem;
+}
 
+.not-found-message{
+    font-weight: 900;
+}
+.not-found-img img{
+    inline-size:50%;
+    display:block;
+    margin-inline:auto;
+}
 
 @media screen and (max-width:930px) {
     .hero-cont-wrapper{
