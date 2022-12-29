@@ -1,605 +1,939 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Page of Chef Cooking">
-    <link rel="apple-touch-icon" href="../images/main/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="shortcut icon" href="../images/main/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/general.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home Page of Chef Cooking" />
+    <link rel="apple-touch-icon" href="../images/main/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/main/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/general.css" />
     <script src="../scripts/index.js" defer></script>
     <script src="../scripts/layout.js" defer></script>
     <title>Chef Cooking</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#main" class="skip-link">Skip to main content</a>
-                <div class="logo-wrapper">
-                   <a href="#"> <img src="../images/main/logo.webp" width="70px" height="70px" alt="cook-logo.svg"></a>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-link">
-                        <a href="#">Home</a> 
-                   </li>
-                   <li class="nav-link">
-                        <a href="#recipes">Recipes</a>
-                   </li>
-                   <li class="nav-link"> 
-                        <a href="./gallery.html">Gallery</a> 
-                   </li>
-                   <li class="nav-link">
-                         <a href="./contacts.html">Contacts</a>
-                   </li>
-                   <li class="nav-link">
-                        <a href="#faq">FAQ</a>
-                   </li>
-                   <li class="nav-link">
-                    <a href="./about.html">About</a>
-                   </li>
-                   <li tabindex="0" class="nav-link reg space">Login</li>
-                   <li class="nav-link reg">
-                    <a href="./register.html">Register</a>
-                   </li>
-                </ul>
-                <div class="ham-wrapper">
-                    <svg class="ham-close-svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 448 512"> <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                    <ul class="ham-menu">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 320 512"> <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-        </nav>
-        <div class="hero-cont-wrapper">
-            <video autoplay loop muted>
-                <source src="../video/video-bg.mp4" type="video/mp4">
-                Your browser does not support this file format
-            </video>
-            <div class="hero-cont">
-                <h1>Chef Cooking</h1>
-                <p>The home of all loving recipes and chefs</p>
-            </div>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#main" class="skip-link">Skip to main content</a>
+          <div class="logo-wrapper">
+            <a href="#">
+              <img
+                src="../images/main/logo.webp"
+                width="70px"
+                height="70px"
+                alt="cook-logo.svg"
+            /></a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#recipes">Recipes</a>
+            </li>
+            <li class="nav-link">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-link">
+              <a href="./contacts.html">Contacts</a>
+            </li>
+            <li class="nav-link">
+              <a href="#faq">FAQ</a>
+            </li>
+            <li class="nav-link">
+              <a href="./about.html">About</a>
+            </li>
+            <li tabindex="0" class="nav-link reg space">Login</li>
+            <li class="nav-link reg">
+              <a href="./register.html">Register</a>
+            </li>
+          </ul>
+          <div class="ham-wrapper">
+            <svg
+              class="ham-close-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+            <ul class="ham-menu">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="login">
-            <div class="login-black-wrap"></div>
-            <div class="login-container">
-                <div>
-                    <img class="login-img" src="../images/main/logo.webp" width="70px" height="70px" alt="cook-logo.svg">
-                </div>
-                <form action="" class="login-form">
-                    <input class="login-input" type="email" placeholder="Email" tabindex="-1">
-                    <input class="login-input" type="password" placeholder="Password" tabindex="-1">
-                </form>
-                <button class="login-btn" tabindex="-1">Submit</button>
-                 
-            </div>
+      </nav>
+      <div class="hero-cont-wrapper">
+        <video autoplay loop muted>
+          <source src="../video/video-bg.mp4" type="video/mp4" />
+          Your browser does not support this file format
+        </video>
+        <div class="hero-cont">
+          <h1>Chef Cooking</h1>
+          <p>The home of all loving recipes and chefs</p>
         </div>
-       
+      </div>
+      <div class="login">
+        <div class="login-black-wrap"></div>
+        <div class="login-container">
+          <div>
+            <img
+              class="login-img"
+              src="../images/main/logo.webp"
+              width="70px"
+              height="70px"
+              alt="cook-logo.svg"
+            />
+          </div>
+          <form action="" class="login-form">
+            <input
+              class="login-input"
+              type="email"
+              placeholder="Email"
+              tabindex="-1"
+            />
+            <input
+              class="login-input"
+              type="password"
+              placeholder="Password"
+              tabindex="-1"
+            />
+          </form>
+          <button class="login-btn" tabindex="-1">Submit</button>
+        </div>
+      </div>
     </header>
 
     <main id="main">
-        <div class="container">
-            <article class="sec flow">
-                <div class="article-img-cont flow">
-                    <img class="article-img" src="../images/main/cook-img-1.webp"
-                    srcset="../images/main/cook-img-1-420w.webp 420w,
-                    ../images/main/cook-img-1-630w.webp 630w,
-                    ../images/main/cook-img-1-950w.webp 950w"
-                    alt="cook-img.jpg" loading="lazy">
-                </div>
-                <div class="article-content flow">
-                    <h2>Explore the world of the cooking!</h2>
-                    <p>Do you like cooking? Is that your first time cooking and you need some help?</p>
-                        <p>
-                            <strong>Chef Cooking</strong> is here for you! We will help you to fall in love with cooking and also help you learn more about the food in general.
-                        </p> 
-                    <a href="#" class="article-link">Read More</a>
-                </div>
-            </article>
+      <div class="container">
+        <article class="sec flow">
+          <div class="article-img-cont flow">
+            <img
+              class="article-img"
+              src="../images/main/cook-img-1.webp"
+              srcset="
+                ../images/main/cook-img-1-420w.webp 420w,
+                ../images/main/cook-img-1-630w.webp 630w,
+                ../images/main/cook-img-1-950w.webp 950w
+              "
+              alt="cook-img.jpg"
+              loading="lazy"
+            />
+          </div>
+          <div class="article-content flow">
+            <h2>Explore the world of the cooking!</h2>
+            <p>
+              Do you like cooking? Is that your first time cooking and you need
+              some help?
+            </p>
+            <p>
+              <strong>Chef Cooking</strong> is here for you! We will help you to
+              fall in love with cooking and also help you learn more about the
+              food in general.
+            </p>
+            <a href="#" class="article-link">Read More</a>
+          </div>
+        </article>
 
-            <article class="sec reverse">
-                <div class="article-content reverse">
-                    <h2>Your favorite recipes in one place!</h2>
-                    <p>Find various types of recipes and step by step tutorial how to cook them. All of the recipes are approved by professional chefs</p>
-                    <a href="#" class="article-link">Read More</a>
-                </div>
-                <div class="article-img-cont reverse">
-                    <img class="article-img" src="../images/main/cook-img-2.webp"
-                    srcset="../images/main/cook-img-2-420w.webp 420w,
-                    ../images/main/cook-img-2-630w.webp 630w,
-                    ../images/main/cook-img-2-950w.webp 950w"
-                     alt="cook-img.jpg" loading="lazy">
-                </div>
-            </article>
+        <article class="sec reverse">
+          <div class="article-content reverse">
+            <h2>Your favorite recipes in one place!</h2>
+            <p>
+              Find various types of recipes and step by step tutorial how to
+              cook them. All of the recipes are approved by professional chefs
+            </p>
+            <a href="#" class="article-link">Read More</a>
+          </div>
+          <div class="article-img-cont reverse">
+            <img
+              class="article-img"
+              src="../images/main/cook-img-2.webp"
+              srcset="
+                ../images/main/cook-img-2-420w.webp 420w,
+                ../images/main/cook-img-2-630w.webp 630w,
+                ../images/main/cook-img-2-950w.webp 950w
+              "
+              alt="cook-img.jpg"
+              loading="lazy"
+            />
+          </div>
+        </article>
 
-            <article class="sec flow">
-                <div class="article-img-cont flow">
-                    <img class="article-img" src="../images/main/cook-img-3.webp"
-                    srcset="../images/main/cook-img-3-420w.webp 420w,
-                    ../images/main/cook-img-3-630w.webp 630w,
-                    ../images/main/cook-img-3-950w.webp 950w"
-                    
-                     alt="cook-img.jpg" loading="lazy">
-                </div>
-                <div class="article-content flow">
-                    <h2>Become a good chef in no time!</h2>
-                    <p><strong>Chef Cooking</strong> will help you to become a good chef in no time and also build your discipline and will for new challenges in the kitchen.</p>
-                    <a href="#" class="article-link">Read More</a>
-                </div>
-            </article>
+        <article class="sec flow">
+          <div class="article-img-cont flow">
+            <img
+              class="article-img"
+              src="../images/main/cook-img-3.webp"
+              srcset="
+                ../images/main/cook-img-3-420w.webp 420w,
+                ../images/main/cook-img-3-630w.webp 630w,
+                ../images/main/cook-img-3-950w.webp 950w
+              "
+              alt="cook-img.jpg"
+              loading="lazy"
+            />
+          </div>
+          <div class="article-content flow">
+            <h2>Become a good chef in no time!</h2>
+            <p>
+              <strong>Chef Cooking</strong> will help you to become a good chef
+              in no time and also build your discipline and will for new
+              challenges in the kitchen.
+            </p>
+            <a href="#" class="article-link">Read More</a>
+          </div>
+        </article>
 
-            <section class="cook-info">
-                <div class="cook-info-wrapper">
+        <section class="cook-info">
+          <div class="cook-info-wrapper"></div>
+        </section>
+      </div>
 
-                </div>
-            </section>
-        </div>
-        
-        <div class="container">
-            <hr>
-            <section class="info-cards">
-                <div class="info-card">
-                    <div class="info-card-icon">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div class="info-card-body">
-                        <div class="info-card-icon">
-                            <img class="info-card-icon--img" src="../images/main/cooking.webp" width="112px" height="112px" alt="cooking.webp">
-                        </div>
-                        <h3 class="info-card--title">Learn and have fun!</h3>
-                        <p class="info-card--text">Cooking is supposed to be fun,right? Of course, it is! Learn everything you need to know about cooking while having a lot of fun!</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-icon">
-                        <img class="info-card-icon--img" src="../images/main/chef.webp" width="112px" height="112px" alt="chef-hat.webp">
-                    </div>
-                    <div class="info-card-body">
-                        <h3  class="info-card--title">Professional Advice</h3>
-                        <p class="info-card--text">We work with professional chefs all around the world who are ready to lend you a hand in your cooking journey.</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-icon">
-                        <img class="info-card-icon--img" src="../images/main/cook-book.webp" width="112px" height="112px" alt="cook-book.webp">
-                    </div>
-                    <div class="info-card-body">
-                        <h3  class="info-card--title">Recipe Paradise</h3>
-                        <p class="info-card--text">All recipes you will need to start are here, waiting for you to cook them!</p>
-                    </div>
-                </div>
-            </section>
-            <hr>
-        </div>
+      <div class="container">
+        <hr />
+        <section class="info-cards">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="info-card-body">
+              <div class="info-card-icon">
+                <img
+                  class="info-card-icon--img"
+                  src="../images/main/cooking.webp"
+                  width="112px"
+                  height="112px"
+                  alt="cooking.webp"
+                />
+              </div>
+              <h3 class="info-card--title">Learn and have fun!</h3>
+              <p class="info-card--text">
+                Cooking is supposed to be fun,right? Of course, it is! Learn
+                everything you need to know about cooking while having a lot of
+                fun!
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <img
+                class="info-card-icon--img"
+                src="../images/main/chef.webp"
+                width="112px"
+                height="112px"
+                alt="chef-hat.webp"
+              />
+            </div>
+            <div class="info-card-body">
+              <h3 class="info-card--title">Professional Advice</h3>
+              <p class="info-card--text">
+                We work with professional chefs all around the world who are
+                ready to lend you a hand in your cooking journey.
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <img
+                class="info-card-icon--img"
+                src="../images/main/cook-book.webp"
+                width="112px"
+                height="112px"
+                alt="cook-book.webp"
+              />
+            </div>
+            <div class="info-card-body">
+              <h3 class="info-card--title">Recipe Paradise</h3>
+              <p class="info-card--text">
+                All recipes you will need to start are here, waiting for you to
+                cook them!
+              </p>
+            </div>
+          </div>
+        </section>
+        <hr />
+      </div>
 
-
-        <div class="container">
-            <section class="recipes bg-sec-secondary" id="recipes">
-                <h2 class="section--title">Recipes</h2>
-                <p class="rec-sec-text">Here you can find all of our recipes! You can expect more in the future!</p>
-                <div class="recipes-grid">
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/eggs-img-650w.webp" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Eggs</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/eggs-img-650w.webp" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/eggs.html" aria-label="eggs-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/pancakes-img-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Pancakes</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/pancakes-img-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/pancakes.html" aria-label="pancakes-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/meat-650w.webp" width="630px" alt="recipe.webp">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>BBQ Meat</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/meat-650w.webp" width="630px" alt="recipe.webp">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/bbq-meat.html" aria-label="bbq-meat-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/cobba-salad-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Cobba Salad</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/cobba-salad-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/cobba-salad.html" aria-label="cobba-salad-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/burrito-650w.webp" width="630px" alt="recipe.webp">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Burrito</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/burrito-650w.webp" width="630px" alt="recipe.webp">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/burrito.html" aria-label="burrito-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/cake-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Cake</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/cake-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/cake.html" aria-label="cake-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/chicken-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Grilled Chicken</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/chicken-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/chicken.html" aria-label="chicken-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/chili-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Chili</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/chili-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/chili.html" aria-label="chili-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/salmon-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Grilled Salmon</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/salmon-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/salmon.html" aria-label="salmon-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/fruit-salad-650w.jpg" width="630px" alt="recipe.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Fruit Salad</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/recipes/fruit-salad-650w.jpg" alt="recipe.jpg">
-                                </div>
-                                <div class="content">
-                                    <div>
-                                         <img src="../images/main/pot.png" alt="">
-                                        <h4>Preparation Time</h4>
-                                        <span>20 min</span>
-                                    </div>
-                                   <div>
-                                        <img src="../images/main/recipe.png" alt="">
-                                        <h4>Ingredients</h4>
-                                        <span>Eggs...</span>
-                                   </div>
-                                   <a href="./recipes/fruit-salad.html" aria-label="fruit-salad-recipe-link" class="rec-content-btn">View Recipe</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recipe-card">
-                        <div class="recipe-card-wrapper">
-                            <div class="recipe-card--front">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/main/coming-soon.jpg" width="630px" alt="coming-soon.jpg">
-                                </div>
-                                <div class="recipe-content">
-                                    <h3>Chef Cooking</h3>
-                                </div>
-                            </div>
-                            <div class="recipe-card--back">
-                                <div class="recipe-img-cont">
-                                    <img class="recipe-img" src="../images/main/coming-soon.jpg" alt="coming-soon.jpg">
-                                </div>
-                                <div class="content">
-                                   <p>More recipes coming soon!</p>
-                                   <a href="#" aria-label="back-to-index-link" class="rec-content-btn">Back to Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <section class="recipes bg-sec-secondary" id="recipes">
+          <h2 class="section--title">Recipes</h2>
+          <p class="rec-sec-text">
+            Here you can find all of our recipes! You can expect more in the
+            future!
+          </p>
+          <div class="recipes-grid">
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/eggs-img-650w.webp"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Eggs</h3>
+                  </div>
                 </div>
-                <div class="recipes-indicators">
-                    <button aria-label="button-recipe-previous" id="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"> <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-                    </button>
-                    <button aria-label="button-recipe-next" id="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"> <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                    </button>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/eggs-img-650w.webp"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/eggs.html"
+                      aria-label="eggs-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
                 </div>
-               
-            </section>
-            <hr>
-            <section class="faq" id="faq">
-                <h2 class="section--title">Frequently Asked Questions</h2>
-
-                <div class="faq-wrapper">
-                    <div class="faq-whole">
-                        <div class="faq-question-cont">
-                            <p class="faq-question">Where should I start my cooking journey?</p>
-                            <span class="faq-addition">+</span>
-                        </div>
-                        <div class="faq-answer-cont">
-                        <p class="faq-answer">You should start with something easy that will not burn your house to ashes. For example, you can start with eggs and after that you can try something harder.</p></div>
-                    </div>
-                    <div class="faq-whole">
-                        <div class="faq-question-cont">
-                            <p class="faq-question">How much time it will take to become great chef?</p>
-                            <span class="faq-addition">+</span>
-                        </div>
-                        <div class="faq-answer-cont"><p class="faq-answer">It is all up to you! But even if you are bad after many unsuccessfull attempts, you should not give up! Just enjoy the cooking and the results will come!</p></div>
-                    </div>
-                    <div class="faq-whole">
-                        <div class="faq-question-cont">
-                            <p class="faq-question">Can I trust this website's advices?</p>
-                            <span class="faq-addition">+</span>
-                        </div>
-                        <div class="faq-answer-cont"><p class="faq-answer">Of course you can! After all we only work with professionals!</p></div>
-                    </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/pancakes-img-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Pancakes</h3>
+                  </div>
                 </div>
-           
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/pancakes-img-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/pancakes.html"
+                      aria-label="pancakes-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/meat-650w.webp"
+                      width="630px"
+                      alt="recipe.webp"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>BBQ Meat</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/meat-650w.webp"
+                      width="630px"
+                      alt="recipe.webp"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/bbq-meat.html"
+                      aria-label="bbq-meat-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/cobba-salad-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Cobba Salad</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/cobba-salad-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/cobba-salad.html"
+                      aria-label="cobba-salad-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/burrito-650w.webp"
+                      width="630px"
+                      alt="recipe.webp"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Burrito</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/burrito-650w.webp"
+                      width="630px"
+                      alt="recipe.webp"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/burrito.html"
+                      aria-label="burrito-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/cake-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Cake</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/cake-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/cake.html"
+                      aria-label="cake-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/chicken-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Grilled Chicken</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/chicken-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/chicken.html"
+                      aria-label="chicken-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/chili-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Chili</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/chili-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/chili.html"
+                      aria-label="chili-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/salmon-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Grilled Salmon</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/salmon-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/salmon.html"
+                      aria-label="salmon-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/fruit-salad-650w.jpg"
+                      width="630px"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Fruit Salad</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/recipes/fruit-salad-650w.jpg"
+                      alt="recipe.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <div>
+                      <img src="../images/main/pot.png" alt="" />
+                      <h4>Preparation Time</h4>
+                      <span>20 min</span>
+                    </div>
+                    <div>
+                      <img src="../images/main/recipe.png" alt="" />
+                      <h4>Ingredients</h4>
+                      <span>Eggs...</span>
+                    </div>
+                    <a
+                      href="./recipes/fruit-salad.html"
+                      aria-label="fruit-salad-recipe-link"
+                      class="rec-content-btn"
+                      >View Recipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card">
+              <div class="recipe-card-wrapper">
+                <div class="recipe-card--front">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/main/coming-soon.jpg"
+                      width="630px"
+                      alt="coming-soon.jpg"
+                    />
+                  </div>
+                  <div class="recipe-content">
+                    <h3>Chef Cooking</h3>
+                  </div>
+                </div>
+                <div class="recipe-card--back">
+                  <div class="recipe-img-cont">
+                    <img
+                      class="recipe-img"
+                      src="../images/main/coming-soon.jpg"
+                      alt="coming-soon.jpg"
+                    />
+                  </div>
+                  <div class="content">
+                    <p>More recipes coming soon!</p>
+                    <a
+                      href="#"
+                      aria-label="back-to-index-link"
+                      class="rec-content-btn"
+                      >Back to Home</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipes-indicators">
+            <button aria-label="button-recipe-previous" id="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                />
+              </svg>
+            </button>
+            <button aria-label="button-recipe-next" id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <hr />
+        <section class="faq" id="faq">
+          <h2 class="section--title">Frequently Asked Questions</h2>
 
-            </section>
-        </div>
+          <div class="faq-wrapper">
+            <div class="faq-whole">
+              <div class="faq-question-cont">
+                <p class="faq-question">
+                  Where should I start my cooking journey?
+                </p>
+                <span class="faq-addition">+</span>
+              </div>
+              <div class="faq-answer-cont">
+                <p class="faq-answer">
+                  You should start with something easy that will not burn your
+                  house to ashes. For example, you can start with eggs and after
+                  that you can try something harder.
+                </p>
+              </div>
+            </div>
+            <div class="faq-whole">
+              <div class="faq-question-cont">
+                <p class="faq-question">
+                  How much time it will take to become great chef?
+                </p>
+                <span class="faq-addition">+</span>
+              </div>
+              <div class="faq-answer-cont">
+                <p class="faq-answer">
+                  It is all up to you! But even if you are bad after many
+                  unsuccessfull attempts, you should not give up! Just enjoy the
+                  cooking and the results will come!
+                </p>
+              </div>
+            </div>
+            <div class="faq-whole">
+              <div class="faq-question-cont">
+                <p class="faq-question">Can I trust this website's advices?</p>
+                <span class="faq-addition">+</span>
+              </div>
+              <div class="faq-answer-cont">
+                <p class="faq-answer">
+                  Of course you can! After all we only work with professionals!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-        <ul class="footer-links">
-            <li class="foot-link">
-                 <a href="./index.html">Home</a> 
-            </li>
-            <li class="foot-link">
-                <a href="https://gotvach.bg/">Privacy and Policy</a> 
-            </li>
-            <li class="foot-link">
-                <a href="./contacts.html">Contacts</a>
-            </li>
-            <li class="foot-link">
-                <a href="#faq">FAQ</a>
-            </li>
+      <ul class="footer-links">
+        <li class="foot-link">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="foot-link">
+          <a href="https://gotvach.bg/">Privacy and Policy</a>
+        </li>
+        <li class="foot-link">
+          <a href="./contacts.html">Contacts</a>
+        </li>
+        <li class="foot-link">
+          <a href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <div class="foot-logo">
+        <a href="./index.html">
+          <img src="../images/main/logo-foot.webp" alt="logo-foot.webp" />
+        </a>
+      </div>
+      <div class="foot-copy">
+        <p>&copy; Chef Cooking Inc - 2022. All rights reserved</p>
+      </div>
+      <div class="foot-media-links">
+        <ul class="media-link-sec">
+          <li class="foot-link">
+            <a href="https://www.facebook.com/" title="Facebook">
+              <svg
+                class="foot-media-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                fill="var(--clr-primary)"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="foot-link">
+            <a href="https://www.instagram.com/" title="Instagram">
+              <svg
+                class="foot-media-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                fill="var(--clr-primary)"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
-        <div class="foot-logo">
-            <a href="./index.html">
-                <img src="../images/main/logo-foot.webp" alt="logo-foot.webp">
-            </a> 
-        </div>
-        <div class="foot-copy">
-            <p>&copy; Chef Cooking Inc - 2022. All rights reserved</p>
-        </div>
-        <div class="foot-media-links">
-            <ul class="media-link-sec">
-                <li class="foot-link">
-                    <a href="https://www.facebook.com/" title="Facebook">
-                        <svg class="foot-media-svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="var(--clr-primary)" viewBox="0 0 512 512"> <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                     </a> 
-                </li>
-                <li class="foot-link">
-                    <a href="https://www.instagram.com/" title="Instagram">
-                        <svg class="foot-media-svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="var(--clr-primary)" viewBox="0 0 448 512"> <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                    </a> 
-                </li>
-            </ul>
-            <ul class="media-link-sec">
-                <li class="foot-link">
-                    <a href="https://github.com/" title="Git-Hub">
-                        <svg class="foot-media-svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="var(--clr-primary)" viewBox="0 0 496 512"> <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                    </a>
-                </li>
-                <li class="foot-link">
-                    <a href="https://discord.com/" title="Discord">
-                        <svg class="foot-media-svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="var(--clr-primary)" viewBox="0 0 640 512"> <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul class="media-link-sec">
+          <li class="foot-link">
+            <a href="https://github.com/" title="Git-Hub">
+              <svg
+                class="foot-media-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                fill="var(--clr-primary)"
+                viewBox="0 0 496 512"
+              >
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="foot-link">
+            <a href="https://discord.com/" title="Discord">
+              <svg
+                class="foot-media-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                fill="var(--clr-primary)"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
