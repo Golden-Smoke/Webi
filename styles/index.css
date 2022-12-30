@@ -147,6 +147,13 @@ section {
   grid-auto-columns: 48%;
   transition: transform 250ms;
 }
+.rec-sec-wrapper{
+  display:flex;
+  justify-content: space-between;
+}
+.rec-sec-wrapper .article-link{
+  align-self: center;
+}
 .rec-sec-text {
   margin-block: 1rem;
   line-height: 1.5;
