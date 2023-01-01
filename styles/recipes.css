@@ -50,11 +50,21 @@
   text-align: center;
 }
 .card-btn-link,
-.search-btn {
+.search-btn,
+.search-btn--rm {
   background-color: var(--clr-secondary);
   color: var(--clr-primary);
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
   cursor: pointer;
+}
+.search-btn--rm{
+  background-color:var(--clr-primary);
+}
+.search-btn--rm:hover{
+  background-color: rgb(44, 40, 35);
+}
+.search-btn--rm:hover svg{
+  fill:#fff;
 }
 .card-btn-link:hover,
 .search-btn:hover {
@@ -65,6 +75,11 @@
   position: relative;
   margin-block: 1.3rem;
   --custom-bord-radius: 25px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:  center;
+  align-items: center;
+  gap:1rem;
 }
 [data-set="error-message"] {
   display: inline-flex;
@@ -97,25 +112,25 @@
   opacity: 1;
   translate: -50% 105%;
 }
-.search-btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  block-size: 100%;
+.search-btn,.search-btn--rm {
   inline-size: 4rem;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  border-radius: 0 var(--custom-bord-radius) var(--custom-bord-radius) 0;
+  border-radius:50%;
   border: none;
 }
-.search-btn svg {
+.search-btn svg,.search-btn--rm svg {
   inline-size: 45%;
   aspect-ratio: 1;
   fill: var(--clr-primary);
+  transition:150ms ease-in-out;
+}
+.search-btn--rm svg{
+  fill:black;
 }
 .recipe-search {
-  inline-size: 100%;
+  flex:1 20rem;
   padding: 0.5em 1em;
   font-size: 1.2rem;
   border: none;

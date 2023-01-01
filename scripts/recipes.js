@@ -5,6 +5,7 @@ const searchInput = document.querySelector(".recipe-search");
 const notFound = document.querySelector('[data-set="not-found-content"]');
 const title = notFound.querySelector(".not-found-title");
 const errMessage = notFound.querySelector(".not-found-message");
+const removeFilterBtn = document.querySelector('.search-btn--rm')
 
 window.addEventListener("load", () => {
   searchInput.value = "";
@@ -57,3 +58,11 @@ search_btn.addEventListener("click", () => {
     card.style.display = "block";
   });
 });
+
+removeFilterBtn.addEventListener('click',() =>{
+  cards.forEach(card =>{
+    card.style.display = 'flex';
+  })
+  searchInput.value = ''
+  notFound.classList.remove('show')
+})

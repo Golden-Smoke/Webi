@@ -342,6 +342,9 @@ footer * {
   .hero-cont-wrapper {
     block-size: calc(70vh + var(--size-nav));
   }
+  .mobile{
+    display:none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -357,10 +360,19 @@ footer * {
   .hero-cont-wrapper {
     block-size: calc(55vh + var(--size-nav));
   }
+  .recipe-content h3{
+    translate:0 -280%;
+  }
+  .mobile{
+    display:block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .hero-cont-wrapper {
     block-size: calc(30rem + var(--size-nav));
+  }
+  .mobile{
+    display:none;
   }
 }
