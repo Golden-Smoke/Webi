@@ -30,6 +30,7 @@ body {
   font-size: 1.5rem;
   padding: 0.2em 0.5em;
   border-radius: inherit;
+  border:none;
 }
 .placeholder {
   position: absolute;

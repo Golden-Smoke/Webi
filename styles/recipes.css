@@ -1,9 +1,7 @@
-.container.narrow {
-  inline-size: min(75rem, 100%);
-}
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit,min(20rem,100%));
   justify-content: center;
   gap: 1rem;
   margin-block: 1rem;
@@ -129,6 +127,7 @@
   inline-size: min(40rem, 100%);
   margin-inline: auto;
   margin-block-end: 1rem;
+  text-align: center;
 }
 [data-set="not-found-content"].show {
   display: block;

@@ -20,6 +20,16 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color:rgb(238, 91, 91) #333;
+}
+html::-webkit-scrollbar{
+  width:auto;
+}
+html::-webkit-scrollbar-thumb{
+  background:rgb(238, 91, 91);
+}
+html::-webkit-scrollbar-track{
+  background:#333;
 }
 
 body {
@@ -326,6 +336,14 @@ footer * {
     translate: 0;
   }
 }
+
+
+@media screen and (max-width: 1280px) {
+  .hero-cont-wrapper {
+    block-size: calc(70vh + var(--size-nav));
+  }
+}
+
 @media screen and (max-width: 800px) {
   .ham-wrapper {
     display: block;
@@ -336,11 +354,8 @@ footer * {
   .nav-wrapper {
     justify-content: space-between;
   }
-}
-
-@media screen and (max-width: 1280px) {
   .hero-cont-wrapper {
-    block-size: calc(80vh + var(--size-nav));
+    block-size: calc(55vh + var(--size-nav));
   }
 }
 
