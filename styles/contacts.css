@@ -9,6 +9,7 @@
   background-position: right 100%;
   background-size: cover;
 }
+ 
 .contacts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
