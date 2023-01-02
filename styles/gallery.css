@@ -20,9 +20,7 @@
   text-align: center;
   color: #fff;
 }
-.container.wide{
-  inline-size:min(90rem,100%);
-}
+
 /* Gallery */
 .gallery-grid {
   display: grid;

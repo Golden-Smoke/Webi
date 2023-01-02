@@ -10,6 +10,9 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.log{
+  flex-wrap:wrap-reverse;
+}
 .reg-info {
   margin-block: 1.5rem;
 }
