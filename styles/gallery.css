@@ -137,19 +137,21 @@
 .svg-wrap{
   position: relative;
   z-index:2;
-  translate: 0 2%;
+  overflow: hidden;
+  background-color: white;
 }
 .gallery-banner-img svg{
-  inline-size:100%;
+  inline-size:105%;
   position:absolute;
   left:0;
-  bottom:0;
+  bottom:-1%;
 }
 .gallery-banner-img{
   flex-basis:20rem;
   position:relative;
   display:flex;
   flex-direction: column;
+  background-color: var(--clr-primary);
 }
 .filler{
   flex-grow:1;
@@ -165,7 +167,7 @@
 }
 .banner-text,.filler{
   background-color: var(--clr-primary);
-  padding:1em;
+  padding:1.5em;
   font-size:1.2rem;
   text-align: center;
 }
@@ -181,7 +183,9 @@
   padding:1em;
   border-radius: 15px;
 }
-
+.banner-cont-img img{
+  aspect-ratio: 1/1.6;
+}
 
 @media screen and (max-width: 1000px) {
   .gallery-grid {
