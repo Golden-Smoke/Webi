@@ -8,7 +8,7 @@
 }
 
 .card {
-  background-color: var(--clr-text);
+  background-color:var(--sec-bg);
   border-radius: 10px;
   display:flex;
   flex-direction: column;
@@ -68,8 +68,8 @@
 }
 .card-btn-link:hover,
 .search-btn:hover {
-  background-color: rgb(100, 27, 27);
-  color: #fff;
+  background-color:var(--link-bg);
+  color:#fff;
 }
 .recipe-search-wrap {
   position: relative;

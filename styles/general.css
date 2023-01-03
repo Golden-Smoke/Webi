@@ -2,10 +2,17 @@
   --clr-primary: rgb(241, 210, 167);
   --clr-secondary: brown;
   --clr-text: #fff;
+  --main-bg:rgb(255 255 255 / 0.7);
+  --sec-bg:#fff;
+  --link-bg:rgb(100, 27, 27);
   --size-nav: 3rem;
   --border-radius: 50px;
 }
 
+body.dark{
+  --clr-primary:#333;
+  --clr-text:rgb(241, 210, 167);
+}
 /* General */
 *,
 *::before,
@@ -33,7 +40,7 @@ html::-webkit-scrollbar-track{
 }
 
 body {
-  background-color: rgba(241, 210, 167, 0.9);
+  background-color:var(--clr-primary);
 }
 
 a {

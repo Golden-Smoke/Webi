@@ -18,9 +18,10 @@
     />
     <link rel="stylesheet" href="../styles/register.css" />
     <link rel="stylesheet" href="../styles/general.css" />
-    <script src="../scripts/register.js" defer></script>
+    <script src="../scripts/authentication.js" defer></script>
+    <script src="../scripts/login.js" defer></script>
     <script src="../scripts/layout.js" defer></script>
-    <title>Chef Cooking - Register</title>
+    <title>Chef Cooking - Login</title>
   </head>
   <body>
     <header>
@@ -94,13 +95,15 @@
     </header>
     <main>
       <div class="reg-wrapper log">
-        <form class="reg-form" action="" method="post">
+        <form id="log-form" class="reg-form" action="" method="post">
           <div class="form-field">
             <span id="email" class="placeholder">Email</span>
             <input
               aria-placeholder="Email"
               aria-labelledby="email"
               class="input-field"
+              name="Email"
+              pattern="[A-Za-z0-9]+@[a-z\-]{2,}\.[a-z]{1,5}"
               type="email"
               required
             />
@@ -111,6 +114,7 @@
               aria-placeholder="Password"
               aria-labelledby="password"
               class="input-field"
+              name="Password"
               type="password"
               minlength="10"
               required

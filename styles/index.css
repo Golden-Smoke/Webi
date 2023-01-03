@@ -29,7 +29,7 @@ article.sec.reverse {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color:var(--main-bg);
   line-height: 1.5;
 }
 .article-link,
@@ -45,8 +45,8 @@ article.sec.reverse {
 .article-link:focus,
 .rec-content-btn:hover,
 .rec-content-btn:focus {
-  background-color: rgb(100, 27, 27);
-  color: #fff;
+  background-color: var(--link-bg);
+  color: var(--clr-text);
 }
 .article-img-cont {
   flex: 1 25rem;
@@ -72,7 +72,7 @@ article.sec.reverse {
   padding-inline: 1em;
 }
 .info-card {
-  background: #fff;
+  background-color:var(--sec-bg);
   flex-basis: 20rem;
   padding-block: 1.5em;
   border-radius: 15px;
@@ -90,8 +90,8 @@ article.sec.reverse {
 .info-card--title {
   margin-block: 1rem;
   position: relative;
-  background-color: brown;
-  color: #fff;
+  background-color:var(--clr-secondary);
+  color:var(--clr-text);
   padding-block: 0.2em;
 }
 .info-card--text {
@@ -120,7 +120,7 @@ article.sec.reverse {
 }
 
 .bg-sec-secondary {
-  background-color: rgb(255 255 255 / 0.7);
+  background-color: var(--main-bg);
 }
 
 .section--title {
@@ -247,7 +247,7 @@ section {
   justify-content: space-evenly;
   border-radius: inherit;
   text-align: center;
-  color: rgb(255 255 255 / 0.6);
+  color: rgb(255 255 255 / 0.7);
   block-size: 100%;
   z-index: 5;
   background: radial-gradient(circle, transparent 75%, var(--clr-secondary));
@@ -303,7 +303,7 @@ section {
 }
 .faq-question-cont,
 .faq-answer-cont {
-  background-color: #fff;
+  background-color:var(--sec-bg);
 }
 
 .faq-question-cont {
@@ -332,7 +332,7 @@ section {
 }
 
 .faq-answer-cont {
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--sec-bg);
   height: 0;
   overflow: hidden;
   transition: height 150ms ease-in-out, border-top 150ms ease-in-out;

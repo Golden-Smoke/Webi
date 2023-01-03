@@ -1,23 +1,26 @@
-const fields = document.querySelectorAll(".form-field");
-const input_fields = document.querySelectorAll(".input-field");
+const form = document.getElementById('reg-form')
+const passwordField = document.querySelector('.input-field[type="password"]')
+const passErrMessage = document.querySelector('.error-msg')
 
-window.addEventListener("load", () => {
-  input_fields.forEach((field) => {
-    field.value = "";
-  });
-});
-fields.forEach((field) => {
-  const placeholder = field.querySelector(".placeholder");
+passwordField.addEventListener('input',() =>{
+  if(passwordField.value.length == 0){
+    passErrMessage.textContent = ''
+  }
+  else if(passwordField.value.length < 10)
+  {
+    passErrMessage.textContent = 'Password is too short. Must be at least 10 characters'
+  }
+  else if(passwordField.value.length >= 10){
+    passErrMessage.textContent = 'Password is weak'
+  }
+})
 
-  field.addEventListener("focusin", () => {
-    placeholder.classList.add("focused");
-  });
+form.addEventListener('submit',e =>{
+  input_fields.forEach(field =>{
+    localStorage.setItem(`${field.name}`,field.value)
+  })
+  e.preventDefault()
+  alert('Successfully registered!')
+  window.location.assign('./index.html')
+})
 
-  field.addEventListener("focusout", () => {
-    let input_value = field.querySelector(".input-field").value;
-    if (input_value.trim() == "") {
-      placeholder.classList.remove("focused");
-      field.querySelector(".input-field").value = "";
-    } else return;
-  });
-});

@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="../styles/register.css" />
     <link rel="stylesheet" href="../styles/general.css" />
+    <script src="../scripts/authentication.js" defer></script>
     <script src="../scripts/register.js" defer></script>
     <script src="../scripts/layout.js" defer></script>
     <title>Chef Cooking - Register</title>
@@ -98,13 +99,14 @@
           <h1>Register</h1>
           <p>Create new account!</p>
         </div>
-        <form class="reg-form" action="" method="post">
+        <form id="reg-form" class="reg-form" action="" method="post">
           <div class="form-field">
             <span id="first-name" class="placeholder">First Name</span>
             <input
               aria-placeholder="First Name"
               aria-labelledby="first-name"
               class="input-field"
+              name="First-Name"
               type="text"
               required
             />
@@ -115,6 +117,7 @@
               aria-placeholder="Last Name"
               aria-labelledby="last-name"
               class="input-field"
+              name="Last-Name"
               type="text"
               required
             />
@@ -125,7 +128,9 @@
               aria-placeholder="Email"
               aria-labelledby="email"
               class="input-field"
+              name="Email"
               type="email"
+              pattern="[A-Za-z0-9]+@[a-z\-]{2,}\.[a-z]{1,5}"
               required
             />
           </div>
@@ -135,8 +140,23 @@
               aria-placeholder="Password"
               aria-labelledby="password"
               class="input-field"
+              name="Password"
               type="password"
               minlength="10"
+              required
+            />
+            <small>
+               <span class="error-msg"></span>
+            </small>
+          </div>
+          <div class="form-field">
+            <span id="date" class="placeholder focused">Date</span>
+            <input
+              aria-placeholder="Date"
+              aria-labelledby="date"
+              class="input-field"
+              name="Date"
+              type="date"
               required
             />
           </div>

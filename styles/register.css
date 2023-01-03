@@ -60,7 +60,7 @@ body {
   background-color: var(--clr-secondary);
   transition: background-color 150ms ease-in-out;
 }
-.btn-submit:hover {
+.btn-submit:hover,.btn-submit:focus {
   background-color: rgb(100, 27, 27);
   color: #fff;
 }
