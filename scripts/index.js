@@ -2,6 +2,19 @@ const faq_questions = document.querySelectorAll(".faq-question-cont");
 const grid_cards = document.querySelector(".recipes-grid");
 const button_next = document.getElementById("next");
 const button_prev = document.getElementById("prev");
+const videoHeader = document.getElementById('video-bg') 
+
+const mediaQuery = window.matchMedia('(max-width:800px)')
+
+mediaQuery.addEventListener('change',() =>{
+  if(mediaQuery.matches){
+    videoHeader.setAttribute('src','../video/video-bg-mobile.mp4')
+  }
+  else{
+    videoHeader.setAttribute('src','../video/video-bg.mp4')
+  }
+  
+})
 
 // Recipe Card - Gap
 let gap = 20;
@@ -47,3 +60,5 @@ button_prev.addEventListener("click", () => {
   countWidth -= card_width;
   grid_cards.style.transform = `translate(-${countWidth}px)`;
 });
+
+
