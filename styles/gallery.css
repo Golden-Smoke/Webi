@@ -1,16 +1,21 @@
+:root{
+  --main-bg:rgb(241, 210, 167);
+}
+body.dark{
+  --main-bg:rgb(12, 12, 12);
+}
 /* Header */
 .hero-cont-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  block-size: calc((90vh - 5rem) + var(--size-nav));
   background-image: radial-gradient(
       circle at center,
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.4),
       rgb(241 210 167 / 0.5)
     ),
-    url("../images/main/gallery-img.webp") !important;
+    url("../images/main/gallery-img.webp");
   background-size: cover;
   background-position: 80% center;
   background-attachment: fixed;
@@ -18,7 +23,6 @@
 .hero-cont {
   flex-basis: min(40rem, 70%);
   text-align: center;
-  color: #fff;
 }
 
 /* Gallery */
@@ -125,7 +129,7 @@
 }
 .banner-cont-img{
   position:relative;
-  background-color:var(--clr-primary);
+  background-color:var(--main-bg);
   padding-inline:1em;
 }
 .banner-cont-img svg{
@@ -146,12 +150,15 @@
   left:0;
   bottom:-1%;
 }
+.gallery-banner-img svg path,.banner-cont-img svg path{
+  fill:var(--main-bg);
+}
 .gallery-banner-img{
   flex-basis:20rem;
   position:relative;
   display:flex;
   flex-direction: column;
-  background-color: var(--clr-primary);
+  background-color: var(--main-bg);
 }
 .filler{
   flex-grow:1;
@@ -166,7 +173,7 @@
   flex:1 25rem;
 }
 .banner-text,.filler{
-  background-color: var(--clr-primary);
+  background-color: var(--main-bg);
   padding:1.5em;
   font-size:1.2rem;
   text-align: center;
@@ -179,7 +186,7 @@
 }
 .filler-text,.banner-text-content{
   background:black;
-  color:var(--clr-primary);
+  color:rgb(241, 210, 167);
   padding:1em;
   border-radius: 15px;
 }

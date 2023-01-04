@@ -1,9 +1,16 @@
 :root {
   --sliding-time: 4s;
+  --card-back:#fff;
+  --clr:black;
+}
+body.dark{
+  --card-back:rgb(12, 12, 12);
+  --clr:#fff;
 }
 .hero-cont {
   align-self: flex-start;
   margin-inline: unset;
+  color:#fff;
 }
 .prep-wrapper {
   display: flex;
@@ -119,7 +126,8 @@
   text-align: center;
 }
 .rating-content {
-  background-color: var(--clr-text);
+  background-color: var(--card-back);
+  color:var(--clr);
   padding: 1em 1.5em;
   border-radius: var(--border-radius);
   flex: 1 1 25rem;
@@ -180,7 +188,8 @@
   counter-reset: step;
 }
 .rec-step {
-  background-color: var(--clr-text);
+  background-color: var(--card-back);
+  color:var(--clr);
   border-radius: 10px;
   padding: 1em;
   position: relative;

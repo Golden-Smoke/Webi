@@ -1,4 +1,13 @@
 /* Main */
+:root{
+  --clr-text:black;
+  --card-title:rgb(241, 210, 167);
+}
+body.dark{
+  --clr-text:rgb(241, 210, 167);
+  --main-bg:rgb(12, 12, 12);
+}
+
 article.sec {
   display: flex;
   /* align-items: center; */
@@ -30,12 +39,13 @@ article.sec.reverse {
   gap: 1rem;
   justify-content: center;
   background-color:var(--main-bg);
+  color:var(--clr-text);
   line-height: 1.5;
 }
 .article-link,
 .rec-content-btn {
   background-color: var(--clr-secondary);
-  color: var(--clr-primary);
+  color: var(--sec-bg);
   padding: 0.5em 1em;
   align-self: flex-start;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
@@ -46,7 +56,6 @@ article.sec.reverse {
 .rec-content-btn:hover,
 .rec-content-btn:focus {
   background-color: var(--link-bg);
-  color: var(--clr-text);
 }
 .article-img-cont {
   flex: 1 25rem;
@@ -72,7 +81,7 @@ article.sec.reverse {
   padding-inline: 1em;
 }
 .info-card {
-  background-color:var(--sec-bg);
+  background-color:var(--main-bg);
   flex-basis: 20rem;
   padding-block: 1.5em;
   border-radius: 15px;
@@ -91,12 +100,13 @@ article.sec.reverse {
   margin-block: 1rem;
   position: relative;
   background-color:var(--clr-secondary);
-  color:var(--clr-text);
+  color:var(--card-title);
   padding-block: 0.2em;
 }
 .info-card--text {
   padding-inline: 1.5em;
   line-height: 1.5;
+  color:var(--clr-text);
 }
 
 .info-card--title::before,
@@ -139,7 +149,9 @@ section {
   overflow: hidden;
   padding: 1.2em;
 }
-
+.rec-title{
+  color:var(--clr-text);
+}
 .recipes-grid {
   display: grid;
   gap: 20px;
@@ -297,13 +309,14 @@ section {
 .faq-wrapper {
   inline-size: min(40rem, 100%);
   margin-inline: auto;
+  color:var(--clr-text);
 }
 .faq-whole {
   margin-block: 1rem;
 }
 .faq-question-cont,
 .faq-answer-cont {
-  background-color:var(--sec-bg);
+  background-color:var(--main-bg);
 }
 
 .faq-question-cont {
@@ -328,11 +341,11 @@ section {
 }
 
 .faq-question-cont.open + .faq-answer-cont {
-  border-top: 2px solid black;
+  border-top: 2px solid var(--clr-text);
 }
 
 .faq-answer-cont {
-  border-top: 2px solid var(--sec-bg);
+  border-top: 2px solid var(--main-bg);
   height: 0;
   overflow: hidden;
   transition: height 150ms ease-in-out, border-top 150ms ease-in-out;
@@ -367,7 +380,7 @@ video {
   );
 }
 /* Media-Queries */
-@media screen and (max-width: 928px) {
+@media screen and (max-width: 930px) {
   .article-img-cont {
     border-radius: var(--border-radius) var(--border-radius) 0px 0px !important;
   }
@@ -375,9 +388,11 @@ video {
   .article-content {
     border-radius: 0px 0px var(--border-radius) var(--border-radius) !important;
   }
-}
-@media screen and (max-width: 930px) {
   .recipes-grid {
-    grid-auto-columns: 100%;
+      grid-auto-columns: 100%;
+  }
+  .recipe-content h3 {
+    translate: 0 -300%;
   }
 }
+ 

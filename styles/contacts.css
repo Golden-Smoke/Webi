@@ -1,3 +1,12 @@
+:root{
+  --main-bg:#fff;
+   --clr:black;
+   --clr-form:rgb(241, 210, 167); 
+}
+body.dark{
+  --main-bg:rgb(12, 12, 12);
+  --clr:#fff;
+}
 .hero-cont-wrapper {
   background-image: radial-gradient(
       circle at center,
@@ -22,7 +31,8 @@
   flex-basis:40rem;
   padding:1em;
   border-radius: 10px;
-  background:var(--sec-bg);
+  background:var(--main-bg);
+  color:var(--clr);
 }
 form{
   block-size: 100%;
@@ -42,6 +52,9 @@ form{
 .svg-wrap svg{
   inline-size: 100%;
 }
+.svg-wrap svg path,.con-svg path{
+  fill:var(--clr);
+}
 .input-wrap{
   flex-grow:1;
 }
@@ -58,7 +71,7 @@ input,textarea,.form-btn{
   inline-size:70%;
   margin-inline: auto;
   background-color: var(--clr-secondary);
-  color: var(--clr-primary);
+  color: var(--clr-form);
   cursor: pointer;
   border: none;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
@@ -66,7 +79,6 @@ input,textarea,.form-btn{
 .form-btn:hover,
 .form-btn:focus{
   background-color: var(--link-bg);
-  color: var(--clr-text);
 }
 .contacts-grid {
   display: grid;
@@ -76,7 +88,8 @@ input,textarea,.form-btn{
 }
 .contact-item {
   border-radius: 10px;
-  background-color: var(--clr-text);
+  background-color: var(--main-bg);
+  color:var(--clr);
   padding: 1em;
   text-align: center;
   display: flex;
@@ -85,6 +98,7 @@ input,textarea,.form-btn{
 .con-title {
   font-size: 1.5rem;
   margin-block: 1rem;
+  color:var(--clr);
 }
 .con-svg {
   inline-size: 30%;

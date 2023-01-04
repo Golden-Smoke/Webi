@@ -1,4 +1,13 @@
-
+:root{
+  --clr-text:black;
+  --main-bg:#fff;
+  --clr:rgb(241, 210, 167);
+}
+body.dark{
+  --clr-link:rgb(241, 210, 167);
+  --clr-text:rgb(241, 210, 167);
+  --main-bg:rgb(12, 12, 12);
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit,min(25rem,100%));
@@ -8,13 +17,15 @@
 }
 
 .card {
-  background-color:var(--sec-bg);
+  background-color:var(--main-bg);
   border-radius: 10px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.card-content{
+  color:var(--clr-text);
+}
 .card-img {
   position: relative;
   isolation: isolate;
@@ -25,12 +36,16 @@
   inline-size: 100%;
   aspect-ratio: 16/11;
 }
+ 
 .card-mask {
   position: absolute;
   left: 0;
   bottom: -5%;
+  
 }
- 
+.card-mask path{
+  fill:var(--main-bg);
+}
 .card-body {
   padding: 1em;
   position: relative;
@@ -53,7 +68,7 @@
 .search-btn,
 .search-btn--rm {
   background-color: var(--clr-secondary);
-  color: var(--clr-primary);
+  color: var(--clr);
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
   cursor: pointer;
 }
@@ -69,7 +84,6 @@
 .card-btn-link:hover,
 .search-btn:hover {
   background-color:var(--link-bg);
-  color:#fff;
 }
 .recipe-search-wrap {
   position: relative;
