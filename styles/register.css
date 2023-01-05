@@ -38,8 +38,8 @@ body {
   inline-size: 100%;
   block-size: 100%;
   display: block;
-  font-size: 1.5rem;
-  padding: 0.2em 0.5em;
+  font-size: 1.2rem;
+  padding: .5em;
   border-radius: inherit;
   border:none;
 }
@@ -59,7 +59,12 @@ body {
   color: black;
   scale: 0.8;
 }
-
+.error-msg{
+  display:block;
+  margin-block:.5rem;
+  max-width:80%;
+  margin-inline:auto;
+}
 .btn-submit {
   all: unset;
   cursor: pointer;
@@ -83,6 +88,7 @@ body {
       url("../images/main/cook-hero-img-650w.webp");
   }
   .reg-wrapper {
+    min-block-size:50vh;
     margin-block: calc(var(--size-nav) + 2rem);
   }
 }

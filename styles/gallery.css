@@ -1,8 +1,10 @@
 :root{
   --main-bg:rgb(241, 210, 167);
+  --clr-bg:#fff;
 }
 body.dark{
   --main-bg:rgb(12, 12, 12);
+  --clr-bg:rgb(12, 12, 12);
 }
 /* Header */
 .hero-cont-wrapper {
@@ -26,6 +28,33 @@ body.dark{
 }
 
 /* Gallery */
+.title-message{
+  display: flex;
+  flex-wrap:wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-block-start:1rem;
+  color:black;
+  gap:3rem;
+  line-height: 1.5;
+}
+body.dark .title-message{
+  color:#fff;
+}
+body.dark .title-message svg{
+  fill:#fff;
+}
+.title-img{
+  flex:1 30rem;
+}
+.title-img img{display: block;}
+.title-message-cont{
+  flex:1 25rem;
+  background-color:var(--clr-bg);
+  padding:1em;
+  border-radius:15px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-areas:
@@ -34,7 +63,7 @@ body.dark{
     "six six seven eight"
     "nine ten ten eight";
   gap: 1rem;
-  margin-block: 1rem;
+  margin-block-end: 1rem;
 }
 .gallery-grid-img {
   font-size: 4rem;
@@ -123,6 +152,9 @@ body.dark{
   inline-size:min(70rem,100%);
   margin-inline:auto;
 }
+body.dark .gallery-banner,body.dark .svg-wrap{
+  background-color: rgb(241, 210, 167);
+}
 .gallery-banner-content{
   display: flex;
   flex-direction: column;
@@ -164,10 +196,11 @@ body.dark{
   flex-grow:1;
 }
 .reverse{
-  rotate:y 180deg;
+  /* rotate:y 180deg; */
+  transform:rotateY(180deg);
 }
 .reverse .filler{
-  rotate:y 180deg;
+  transform:rotateY(180deg);
 }
 .gallery-banner-content{
   flex:1 25rem;
@@ -189,6 +222,9 @@ body.dark{
   color:rgb(241, 210, 167);
   padding:1em;
   border-radius: 15px;
+}
+.banner-text-title{
+  margin-block:.5rem;
 }
 .banner-cont-img img{
   aspect-ratio: 1/1.6;

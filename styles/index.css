@@ -181,7 +181,7 @@ section {
 }
 .recipe-card:hover .recipe-card-wrapper,
 .recipe-card:focus-within .recipe-card-wrapper {
-  rotate: y 180deg;
+  transform:rotateY(180deg);
 }
 .recipe-card:hover .recipe-card--front {
   pointer-events: none;
@@ -203,7 +203,7 @@ section {
 }
 
 .recipe-card--back {
-  rotate: y 180deg;
+  transform:rotateY(180deg);
   position: relative;
   isolation: isolate;
 }
@@ -249,7 +249,7 @@ section {
   );
 }
 .recipe-content h3 {
-  translate: 0 -180%;
+  transform:translate(0,-180%);
 }
 .content {
   position: relative;
@@ -277,7 +277,7 @@ section {
   z-index: 10;
   bottom: 5%;
   left: 50%;
-  translate: -50%;
+  transform:translate(-50%);
 }
 .recipes-indicators {
   display: flex;
@@ -296,6 +296,9 @@ section {
   cursor: pointer;
   transition: background-color 150ms ease-in-out;
 }
+body.dark #next,body.dark #prev{
+  fill: var(--clr-text);
+}
 #next:active,
 #prev:active,
 #next:hover,
@@ -305,11 +308,15 @@ section {
   background-color: rgba(0, 0, 0, 0.9);
 }
 /* FAQ */
-
+.faq{
+  color:var(--clr-text);
+}
 .faq-wrapper {
   inline-size: min(40rem, 100%);
   margin-inline: auto;
-  color:var(--clr-text);
+}
+.faq .section--title{
+  margin-block:2.5rem;
 }
 .faq-whole {
   margin-block: 1rem;
@@ -333,11 +340,11 @@ section {
 
 .faq-addition {
   font-size: 2rem;
-  transition: rotate 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
 .faq-question-cont.open .faq-addition {
-  rotate: 45deg;
+  transform:rotate(45deg);
 }
 
 .faq-question-cont.open + .faq-answer-cont {
@@ -391,8 +398,10 @@ video {
   .recipes-grid {
       grid-auto-columns: 100%;
   }
-  .recipe-content h3 {
-    translate: 0 -300%;
+}
+@media screen and (max-width: 850px) {
+  .recipe-content h3{
+    transform:translate(0,-300%);
   }
 }
  

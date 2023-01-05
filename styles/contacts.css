@@ -52,6 +52,9 @@ form{
 .svg-wrap svg{
   inline-size: 100%;
 }
+.svg-wrap.mess{
+  align-self: flex-start;
+}
 .svg-wrap svg path,.con-svg path{
   fill:var(--clr);
 }

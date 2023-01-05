@@ -6,41 +6,7 @@
 body.dark{
   --clr:rgb(241, 210, 167);
 }
-@media screen and (max-width: 930px) {
-  .hero-cont-wrapper {
-    background-image: radial-gradient(
-        circle at center,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.4),
-        rgb(241 210 167 / 0.5)
-      ),
-      url("../images/main/about-bg-650w.webp");
-  }
-}
-@media screen and (min-width: 930px) and (max-width: 1280px) {
-  .hero-cont-wrapper {
-    background-image: radial-gradient(
-        circle at center,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.4),
-        rgb(241 210 167 / 0.5)
-      ),
-      url("../images/main/about-bg-920w.webp");
-    background-position: center 30%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-cont-wrapper {
-    background-image: radial-gradient(
-        circle at center,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.4),
-        rgb(241 210 167 / 0.5)
-      ),
-      url("../images/main/about-bg-1400w.webp");
-    background-position: center 30%;
-  }
-}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -87,10 +53,10 @@ body.dark{
 }
 @keyframes moving {
   from {
-    translate: 0;
+    transform:translate(0);
   }
   to {
-    translate: calc(var(--bg-size) * 5);
+    transform:translate(calc(var(--bg-size) * 5));
   }
 }
 
@@ -210,4 +176,40 @@ body.dark{
 .d-title {
   font-size: 1.5rem;
   margin-block: 0.5rem;
+}
+
+@media screen and (max-width: 930px) {
+  .hero-cont-wrapper {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.4),
+        rgb(241 210 167 / 0.5)
+      ),
+      url("../images/main/about-bg-650w.webp");
+  }
+}
+@media screen and (min-width: 930px) and (max-width: 1280px) {
+  .hero-cont-wrapper {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.4),
+        rgb(241 210 167 / 0.5)
+      ),
+      url("../images/main/about-bg-920w.webp");
+    background-position: center 30%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-cont-wrapper {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.4),
+        rgb(241 210 167 / 0.5)
+      ),
+      url("../images/main/about-bg-1400w.webp");
+    background-position: center 30%;
+  }
 }

@@ -25,6 +25,10 @@ body.dark{
 }
 .card-content{
   color:var(--clr-text);
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 .card-img {
   position: relative;
@@ -106,11 +110,11 @@ body.dark{
   min-block-size: 4rem;
   left: 50%;
   bottom: 0;
-  translate: -50% 100%;
+  transform:translate(-50%, 100%);
   background-color: rgb(255 255 255 / 0.7);
   z-index: 2;
   opacity: 0;
-  transition: translate 150ms ease-in-out, opacity 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
   clip-path: polygon(
     50% 0%,
     52% 10%,
@@ -124,7 +128,7 @@ body.dark{
 }
 [data-set="error-message"].show {
   opacity: 1;
-  translate: -50% 105%;
+  transform:translate(-50%, 105%);
 }
 .search-btn,.search-btn--rm {
   inline-size: 4rem;
@@ -137,11 +141,14 @@ body.dark{
 .search-btn svg,.search-btn--rm svg {
   inline-size: 45%;
   aspect-ratio: 1;
-  fill: var(--clr-primary);
+  fill:rgb(241, 210, 167);
   transition:150ms ease-in-out;
 }
 .search-btn--rm svg{
   fill:black;
+}
+body.dark .search-btn--rm svg{
+  fill:rgb(241, 210, 167);
 }
 .recipe-search {
   flex:1 20rem;
