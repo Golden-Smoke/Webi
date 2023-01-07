@@ -60,12 +60,12 @@ form{
   z-index: -1;
 }
 .form-title::before {
-  left: -7%;
+  left: -5%;
   top: 10%;
   clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 .form-title::after {
-  right: -7%;
+  right: -5%;
   top: 10%;
   clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 0% 100%, 0% 0%, 100% 0%);
 }
@@ -142,4 +142,7 @@ input,textarea,.form-btn{
 .map iframe{
   inline-size:100%;
 }
- 
+
+@media screen and (max-width:850px) {
+  .hero-cont-wrapper{background-position:80%;}
+}

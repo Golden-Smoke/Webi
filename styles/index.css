@@ -53,7 +53,7 @@ article.sec.reverse {
 }
 
 .article-link:hover,
-.article-link:focus,
+.article-link:focus-visible,
 .rec-content-btn:hover,
 .rec-content-btn:focus {
   background-color:rgb(100, 27, 27);

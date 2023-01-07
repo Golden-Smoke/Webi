@@ -269,3 +269,6 @@ body.dark .gallery-banner,body.dark .svg-wrap{
       "ten";
   }
 }
+@media screen and (max-width:850px) {
+  .hero-cont-wrapper{background-position:50%;}
+}
