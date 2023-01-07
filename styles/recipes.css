@@ -87,7 +87,7 @@ body.dark{
 }
 .card-btn-link:hover,
 .search-btn:hover {
-  background-color:var(--link-bg);
+  background-color:rgb(100, 27, 27);
 }
 .recipe-search-wrap {
   position: relative;

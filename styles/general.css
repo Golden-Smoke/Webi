@@ -3,18 +3,12 @@
   --clr-secondary: brown;
   --clr-text: #fff;
   --clr-link:black;
-  --clr-heading:#fff;
-  --main-bg:rgb(255 255 255 / 0.7);
-  --sec-bg:#fff;
-  --link-bg:rgb(100, 27, 27);
   --size-nav: 3rem;
-  --border-radius: 50px;
 }
 
 body.dark{
   --clr-primary:#333;
   --clr-link:rgb(241, 210, 167);
-  --clr-heading:rgb(241, 210, 167);
 }
 /* General */
 *,
@@ -40,6 +34,9 @@ html::-webkit-scrollbar-thumb{
 }
 html::-webkit-scrollbar-track{
   background:#333;
+}
+html:has(body.dark)::-webkit-scrollbar-track{
+  background-color:black;
 }
 
 body {
@@ -79,9 +76,11 @@ img {
 .hero-cont {
   flex-basis: min(40rem, 70%);
   text-align: center;
-  color: var(--clr-heading);
+  color:#fff;
   margin: auto;
 }
+body.dark .hero-cont{color:rgb(241, 210, 167);}
+
 .container {
   inline-size: min(80rem, 100%);
   margin-inline: auto;

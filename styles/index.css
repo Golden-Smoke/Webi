@@ -2,6 +2,7 @@
 :root{
   --clr-text:black;
   --card-title:rgb(241, 210, 167);
+  --main-bg:rgb(255 255 255 / 0.7);
 }
 body.dark{
   --clr-text:rgb(241, 210, 167);
@@ -24,15 +25,15 @@ article.sec.reverse {
 
 .article-img-cont.flow,
 .article-content.reverse {
-  border-radius: var(--border-radius) 0px 0px var(--border-radius);
+  border-radius: 50px 0px 0px 50px;
 }
 .article-img-cont.reverse,
 .article-content.flow {
-  border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+  border-radius: 0px 50px 50px 0px;
 }
 .article-content {
   padding: 1.5em 2em;
-  flex: 1 30rem;
+  flex: 1 23rem;
   align-self: stretch;
   display: inline-flex;
   flex-direction: column;
@@ -45,7 +46,7 @@ article.sec.reverse {
 .article-link,
 .rec-content-btn {
   background-color: var(--clr-secondary);
-  color: var(--sec-bg);
+  color:#fff;
   padding: 0.5em 1em;
   align-self: flex-start;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
@@ -55,10 +56,10 @@ article.sec.reverse {
 .article-link:focus,
 .rec-content-btn:hover,
 .rec-content-btn:focus {
-  background-color: var(--link-bg);
+  background-color:rgb(100, 27, 27);
 }
 .article-img-cont {
-  flex: 1 25rem;
+  flex: 1 18rem;
   overflow: hidden;
 }
 
@@ -388,13 +389,6 @@ video {
 }
 /* Media-Queries */
 @media screen and (max-width: 930px) {
-  .article-img-cont {
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px !important;
-  }
-
-  .article-content {
-    border-radius: 0px 0px var(--border-radius) var(--border-radius) !important;
-  }
   .recipes-grid {
       grid-auto-columns: 100%;
   }
@@ -403,5 +397,17 @@ video {
   .recipe-content h3{
     transform:translate(0,-300%);
   }
+}
+@media screen and (max-width:715px){
+  .article-img-cont.flow,
+  .article-img-cont.reverse {
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  .article-content.flow,
+  .article-content.reverse {
+    border-radius: 0px 0px 50px 50px;
+  }
+  
 }
  

@@ -12,6 +12,7 @@ body.dark{
   margin-inline: unset;
   color:#fff;
 }
+body.dark .hero-cont{color:#fff;}
 .prep-wrapper {
   display: flex;
   position: relative;
@@ -19,7 +20,7 @@ body.dark{
   color: #fff;
   padding: 1em;
   margin-block: 1.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 50px;
   box-shadow: 0 0 10px 10px rgb(0 0 0 / 0.6);
 }
 .prep-wrapper::before {
@@ -49,7 +50,7 @@ body.dark{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: calc(var(--border-radius) - 2rem);
+  border-radius: calc(50px - 2rem);
   padding: 1em;
 }
 .desc-wrap {
@@ -129,7 +130,7 @@ body.dark{
   background-color: var(--card-back);
   color:var(--clr);
   padding: 1em 1.5em;
-  border-radius: var(--border-radius);
+  border-radius: 50px;
   flex: 1 1 25rem;
   margin-block-end: 1.5rem;
 }
