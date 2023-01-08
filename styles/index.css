@@ -191,6 +191,10 @@ section {
 .recipe-card:hover .recipe-card--front {
   pointer-events: none;
 }
+/* .recipe-card:hover .mobile,
+.recipe-card:focus-within .mobile {
+  transform: rotateY(180deg);
+} */
 .recipe-card-wrapper {
   transform-style: preserve-3d;
   transition: 150ms;
@@ -222,12 +226,7 @@ section {
   border-radius: inherit;
   backdrop-filter: blur(5px);
 }
-.mobile {
-  backface-visibility: hidden;
-}
-.recipe-card:focus-within .mobile{
-  display:none;
-}
+
 .recipe-img-cont {
   inline-size: 100%;
   block-size: 100%;
@@ -412,6 +411,14 @@ video {
     rgba(0, 0, 0, 0.4),
     rgb(241 210 167 / 0.5)
   );
+}
+.mobile {
+  backface-visibility: hidden;
+}
+.recipe-card:focus-within .mobile,
+.recipe-card:hover .mobile{
+  display:none;
+  z-index:-5;
 }
 /* Media-Queries */
 @media screen and (max-width: 930px) {
