@@ -1,21 +1,32 @@
 const faq_questions = document.querySelectorAll(".faq-question-cont");
-const faq_wholes = document.querySelectorAll('.faq-whole')
+const faq_wholes = document.querySelectorAll(".faq-whole");
 const grid_cards = document.querySelector(".recipes-grid");
 const button_next = document.getElementById("next");
 const button_prev = document.getElementById("prev");
-const videoHeader = document.getElementById('video-bg') 
+const videoHeader = document.getElementById("video-bg");
 
-const mediaQuery = window.matchMedia('(max-width:800px)')
+const videoSource = videoHeader.children[0];
+const mediaQuery = window.matchMedia("(max-width:850px)");
 
-mediaQuery.addEventListener('change',() =>{
-  if(mediaQuery.matches){
-    videoHeader.setAttribute('src','../video/video-bg-mobile.mp4')
+window.addEventListener("load", () => {
+  if (mediaQuery.matches) {
+    videoHeader.setAttribute("src", "../video/video-bg-mobile.mp4");
+    videoSource.setAttribute("src", "../video/video-bg-mobile.mp4");
+  } else {
+    videoHeader.setAttribute("src", "../video/video-bg.mp4");
+    videoSource.setAttribute("src", "../video/video-bg.mp4");
   }
-  else{
-    videoHeader.setAttribute('src','../video/video-bg.mp4')
+});
+
+mediaQuery.addEventListener("change", () => {
+  if (mediaQuery.matches) {
+    videoHeader.setAttribute("src", "../video/video-bg-mobile.mp4");
+    videoSource.setAttribute("src", "../video/video-bg-mobile.mp4");
+  } else {
+    videoHeader.setAttribute("src", "../video/video-bg.mp4");
+    videoSource.setAttribute("src", "../video/video-bg.mp4");
   }
-  
-})
+});
 
 // Recipe Card - Gap
 let gap = 20;
@@ -62,13 +73,12 @@ button_prev.addEventListener("click", () => {
   grid_cards.style.transform = `translate(-${countWidth}px)`;
 });
 
-
-faq_wholes.forEach(faq =>{
-  faq.addEventListener('focus',() =>{
-    const faq_quest = faq.querySelector('.faq-question-cont')
-    const faq_answer = faq_quest.nextElementSibling 
-    faq.addEventListener('keydown',(e) =>{
-       if(e.code == 'Enter'){
+faq_wholes.forEach((faq) => {
+  faq.addEventListener("focus", () => {
+    const faq_quest = faq.querySelector(".faq-question-cont");
+    const faq_answer = faq_quest.nextElementSibling;
+    faq.addEventListener("keydown", (e) => {
+      if (e.code == "Enter") {
         faq_quest.classList.toggle("open");
 
         if (faq_quest.classList.contains("open")) {
@@ -76,19 +86,7 @@ faq_wholes.forEach(faq =>{
         } else {
           faq_answer.style.height = 0;
         }
-       }
-    })
-  })
-})
-
-window.addEventListener('load',() =>{
-  if(mediaQuery.matches){
-    videoHeader.setAttribute('src','../video/video-bg-mobile.mp4')
-    console.log('Smaller Loaded')
-  }
-  else{
-    videoHeader.setAttribute('src','../video/video-bg.mp4')
-    console.log('Bigger Loaded')
-  }
-
-})
+      }
+    });
+  });
+});

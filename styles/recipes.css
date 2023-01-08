@@ -1,31 +1,31 @@
-:root{
-  --clr-text:black;
-  --main-bg:#fff;
-  --clr:rgb(241, 210, 167);
+:root {
+  --clr-text: black;
+  --main-bg: #fff;
+  --clr: rgb(241, 210, 167);
 }
-body.dark{
-  --clr-link:rgb(241, 210, 167);
-  --clr-text:rgb(241, 210, 167);
-  --main-bg:rgb(12, 12, 12);
+body.dark {
+  --clr-link: rgb(241, 210, 167);
+  --clr-text: rgb(241, 210, 167);
+  --main-bg: rgb(12, 12, 12);
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit,min(25rem,100%));
+  grid-template-columns: repeat(auto-fit, min(25rem, 100%));
   justify-content: center;
   gap: 1rem;
   margin-block: 1rem;
 }
 
 .card {
-  background-color:var(--main-bg);
+  background-color: var(--main-bg);
   border-radius: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.card-content{
-  color:var(--clr-text);
-  display:-webkit-box;
+.card-content {
+  color: var(--clr-text);
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
@@ -40,22 +40,21 @@ body.dark{
   inline-size: 100%;
   aspect-ratio: 16/11;
 }
- 
+
 .card-mask {
   position: absolute;
   left: 0;
   bottom: -5%;
-  
 }
-.card-mask path{
-  fill:var(--main-bg);
+.card-mask path {
+  fill: var(--main-bg);
 }
 .card-body {
   padding: 1em;
   position: relative;
   z-index: 1;
   flex-grow: 1;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -76,28 +75,28 @@ body.dark{
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
   cursor: pointer;
 }
-.search-btn--rm{
-  background-color:var(--clr-primary);
+.search-btn--rm {
+  background-color: var(--clr-primary);
 }
-.search-btn--rm:hover{
+.search-btn--rm:hover {
   background-color: rgb(44, 40, 35);
 }
-.search-btn--rm:hover svg{
-  fill:#fff;
+.search-btn--rm:hover svg {
+  fill: #fff;
 }
 .card-btn-link:hover,
 .search-btn:hover {
-  background-color:rgb(100, 27, 27);
+  background-color: rgb(100, 27, 27);
 }
 .recipe-search-wrap {
   position: relative;
   margin-block: 1.3rem;
   --custom-bord-radius: 25px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:  center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
 }
 [data-set="error-message"] {
   display: inline-flex;
@@ -110,7 +109,7 @@ body.dark{
   min-block-size: 4rem;
   left: 50%;
   bottom: 0;
-  transform:translate(-50%, 100%);
+  transform: translate(-50%, 100%);
   background-color: rgb(255 255 255 / 0.7);
   z-index: 2;
   opacity: 0;
@@ -128,30 +127,32 @@ body.dark{
 }
 [data-set="error-message"].show {
   opacity: 1;
-  transform:translate(-50%, 105%);
+  transform: translate(-50%, 105%);
 }
-.search-btn,.search-btn--rm {
+.search-btn,
+.search-btn--rm {
   inline-size: 4rem;
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
-  border-radius:50%;
+  border-radius: 50%;
   border: none;
 }
-.search-btn svg,.search-btn--rm svg {
+.search-btn svg,
+.search-btn--rm svg {
   inline-size: 45%;
   aspect-ratio: 1;
-  fill:rgb(241, 210, 167);
-  transition:150ms ease-in-out;
+  fill: rgb(241, 210, 167);
+  transition: 150ms ease-in-out;
 }
-.search-btn--rm svg{
-  fill:black;
+.search-btn--rm svg {
+  fill: black;
 }
-body.dark .search-btn--rm svg{
-  fill:rgb(241, 210, 167);
+body.dark .search-btn--rm svg {
+  fill: rgb(241, 210, 167);
 }
 .recipe-search {
-  flex:1 20rem;
+  flex: 1 20rem;
   padding: 0.5em 1em;
   font-size: 1.2rem;
   border: none;
@@ -164,13 +165,13 @@ body.dark .search-btn--rm svg{
   margin-inline: auto;
   margin-block-end: 1rem;
   text-align: center;
-  border-radius:10px;
+  border-radius: 10px;
 }
 [data-set="not-found-content"].show {
   display: block;
 }
-body.dark [data-set="not-found-content"]{
-  background-color:rgb(241, 210, 167);
+body.dark [data-set="not-found-content"] {
+  background-color: rgb(241, 210, 167);
 }
 .not-found-text {
   display: flex;

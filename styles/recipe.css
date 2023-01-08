@@ -1,18 +1,20 @@
 :root {
   --sliding-time: 4s;
-  --card-back:#fff;
-  --clr:black;
+  --card-back: #fff;
+  --clr: black;
 }
-body.dark{
-  --card-back:rgb(12, 12, 12);
-  --clr:#fff;
+body.dark {
+  --card-back: rgb(12, 12, 12);
+  --clr: #fff;
 }
 .hero-cont {
   align-self: flex-start;
   margin-inline: unset;
-  color:#fff;
+  color: #fff;
 }
-body.dark .hero-cont{color:#fff;}
+body.dark .hero-cont {
+  color: #fff;
+}
 .prep-wrapper {
   display: flex;
   position: relative;
@@ -128,7 +130,7 @@ body.dark .hero-cont{color:#fff;}
 }
 .rating-content {
   background-color: var(--card-back);
-  color:var(--clr);
+  color: var(--clr);
   padding: 1em 1.5em;
   border-radius: 50px;
   flex: 1 1 25rem;
@@ -190,7 +192,7 @@ body.dark .hero-cont{color:#fff;}
 }
 .rec-step {
   background-color: var(--card-back);
-  color:var(--clr);
+  color: var(--clr);
   border-radius: 10px;
   padding: 1em;
   position: relative;
@@ -226,4 +228,6 @@ body.dark .hero-cont{color:#fff;}
 .rec-step-title {
   margin-block: 1.3rem;
 }
-.rec-step-text{line-height: 1.5;}
+.rec-step-text {
+  line-height: 1.5;
+}

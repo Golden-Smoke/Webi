@@ -1,9 +1,9 @@
-:root{
-  --clr:rgb(241, 210, 167);
-  --main-bg:rgb(241, 210, 167);
+:root {
+  --clr: rgb(241, 210, 167);
+  --main-bg: rgb(241, 210, 167);
 }
-body.dark{
-  --main-bg:#333;
+body.dark {
+  --main-bg: #333;
 }
 
 body {
@@ -18,8 +18,8 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.log{
-  flex-wrap:wrap-reverse;
+.log {
+  flex-wrap: wrap-reverse;
 }
 .reg-info {
   margin-block: 1.5rem;
@@ -39,9 +39,9 @@ body {
   block-size: 100%;
   display: block;
   font-size: 1.2rem;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: inherit;
-  border:none;
+  border: none;
 }
 .placeholder {
   position: absolute;
@@ -59,11 +59,14 @@ body {
   color: black;
   scale: 0.8;
 }
-.error-msg{
-  display:block;
-  margin-block:.5rem;
-  max-width:80%;
-  margin-inline:auto;
+.error-msg {
+  display: block;
+  margin-block: 0.5rem;
+  max-width: 80%;
+  margin-inline: auto;
+}
+body.dark .error-msg {
+  color: #fff;
 }
 .btn-submit {
   all: unset;
@@ -73,8 +76,9 @@ body {
   background-color: var(--clr-secondary);
   transition: background-color 150ms ease-in-out;
 }
-.btn-submit:hover,.btn-submit:focus {
-  background-color:rgb(100, 27, 27);
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: rgb(100, 27, 27);
 }
 
 @media screen and (max-width: 930px) {
@@ -88,7 +92,7 @@ body {
       url("../images/main/cook-hero-img-650w.webp");
   }
   .reg-wrapper {
-    min-block-size:50vh;
+    min-block-size: 50vh;
     margin-block: calc(var(--size-nav) + 2rem);
   }
 }

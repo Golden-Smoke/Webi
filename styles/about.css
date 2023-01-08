@@ -1,10 +1,10 @@
 :root {
   --bg-size: 5.45rem;
-  --clr:black; 
+  --clr: black;
 }
 
-body.dark{
-  --clr:rgb(241, 210, 167);
+body.dark {
+  --clr: rgb(241, 210, 167);
 }
 
 .wrapper {
@@ -14,7 +14,7 @@ body.dark{
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  color:var(--clr);
+  color: var(--clr);
 }
 .text {
   flex-basis: 40rem;
@@ -53,10 +53,10 @@ body.dark{
 }
 @keyframes moving {
   from {
-    transform:translate(0);
+    transform: translate(0);
   }
   to {
-    transform:translate(calc(var(--bg-size) * 5));
+    transform: translate(calc(var(--bg-size) * 5));
   }
 }
 
@@ -76,7 +76,7 @@ body.dark{
 }
 .source-item {
   background-color: var(--clr-text);
-  color:black;
+  color: black;
   border-radius: 10px;
   transition: box-shadow 150ms ease-in-out;
 }
@@ -97,8 +97,35 @@ body.dark{
   aspect-ratio: 16/9;
   border-radius: 10px 10px 0 0;
 }
+
 .sr-title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  inline-size: fit-content;
+  margin-inline: auto;
+  margin-block: 2rem 1rem;
+  position: relative;
+  background-color: var(--clr-secondary);
+  color: rgb(241, 210, 167);
+  padding: 0.5em;
+}
+.sr-title::before,
+.sr-title::after {
+  content: "";
+  position: absolute;
+  inline-size: 2rem;
+  block-size: 94%;
+  background-color: inherit;
+  z-index: -1;
+}
+.sr-title::before {
+  left: -5%;
+  top: 10%;
+  clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.sr-title::after {
+  right: -5%;
+  top: 10%;
+  clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 0% 100%, 0% 0%, 100% 0%);
 }
 .center {
   text-align: center;
@@ -112,7 +139,7 @@ body.dark{
 }
 .d-load-wrap {
   margin-block: 1.5rem;
-  color:var(--clr);
+  color: var(--clr);
 }
 .d-link {
   flex-basis: 25rem;

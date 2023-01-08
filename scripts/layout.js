@@ -4,26 +4,24 @@ const ham_cont = document.querySelector(".ham-wrapper > svg");
 const hamburger = document.querySelector(".ham-menu");
 const ham_close = document.querySelector(".ham-menu svg");
 const login_btn = document.querySelector(".nav-link.reg.space");
-const themes = document.querySelectorAll('.toggle')
+const themes = document.querySelectorAll(".toggle");
 
+window.addEventListener("load", () => {
+  const theme = localStorage.getItem("theme");
+  if (theme == "dark") document.body.classList.add("dark");
+  else document.body.classList.remove("dark");
+});
 
-window.addEventListener('load',() =>{
-  const theme = localStorage.getItem('theme')
-  if(theme == 'dark') document.body.classList.add('dark')
-  else document.body.classList.remove('dark')
-})
-
-themes.forEach(theme =>{
-  theme.addEventListener('click',() =>{
-    document.body.classList.toggle('dark')
-    if(document.body.classList.contains('dark')){
-      localStorage.setItem('theme','dark')
+themes.forEach((theme) => {
+  theme.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
     }
-    else{
-      localStorage.setItem('theme','light')
-    }
-  })
-})
+  });
+});
 
 nav_links.forEach((link) => {
   const copiedLink = link.cloneNode(true);
