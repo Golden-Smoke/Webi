@@ -225,6 +225,9 @@ section {
 .mobile {
   backface-visibility: hidden;
 }
+.recipe-card:focus-within .mobile{
+  display:none;
+}
 .recipe-img-cont {
   inline-size: 100%;
   block-size: 100%;
