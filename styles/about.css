@@ -240,3 +240,8 @@ body.dark {
     background-position: center 30%;
   }
 }
+@media screen and (min-width:1900px) {
+  .rate{
+    flex-grow:0;
+  }
+}

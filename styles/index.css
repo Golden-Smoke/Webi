@@ -338,10 +338,10 @@ body.dark #prev {
   block-size: 100%;
 }
 .faq-title::before {
-  left: -5%;
+  left: -3%;
 }
 .faq-title::after {
-  right: -5%;
+  right: -3%;
 }
 
 .faq-whole {
@@ -440,5 +440,10 @@ video {
   .article-content.flow,
   .article-content.reverse {
     border-radius: 0px 0px 50px 50px;
+  }
+}
+@media screen and (min-width:1900px) {
+  h2,.section--title{
+    font-size:clamp(2rem,4vw,2.5rem);
   }
 }
