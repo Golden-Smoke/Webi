@@ -379,5 +379,8 @@ footer * {
   html{
     font-size: 17px;
   }
+  .container,.container.wide{
+    inline-size:min(85rem,100%);
+  }
 }
 
