@@ -200,13 +200,17 @@
               class="input-field"
               name="Password"
               type="password"
-              minlength="10"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
               required
             />
-            <small>
-              <span class="error-msg"></span>
-            </small>
           </div>
+          <small>
+            <ul class="error-msg">
+              <li>Must contain at least 8 characters</li>
+              <li>Must contain at least 1 number</li>
+              <li>Must contain at least 1 special symbol</li>
+            </ul>
+          </small>
           <div class="form-field">
             <span id="date" class="placeholder focused">Date</span>
             <input

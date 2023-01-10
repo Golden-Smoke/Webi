@@ -42,6 +42,7 @@ body {
   padding: 0.5em;
   border-radius: inherit;
   border: none;
+  transition:box-shadow 150ms ease-in-out;
 }
 .placeholder {
   position: absolute;
@@ -59,11 +60,18 @@ body {
   color: black;
   scale: 0.8;
 }
+body.dark .placeholder.focused{
+  background-color: rgb(32, 31, 31);
+  color:rgb(241, 210, 167);
+  top:-10%;
+  padding-inline:1em;
+}
 .error-msg {
-  display: block;
+  line-height:1.5;
   margin-block: 0.5rem;
-  max-width: 80%;
+  max-width: 85%;
   margin-inline: auto;
+  list-style:square;
 }
 body.dark .error-msg {
   color: #fff;
@@ -80,6 +88,12 @@ body.dark .error-msg {
 .btn-submit:focus {
   background-color: rgb(100, 27, 27);
 }
+input:not([type="date"],.log-field):valid{
+  box-shadow: 0 0 10px 3px rgba(11, 255, 2, 0.76);
+}
+input:not([type="date"],.log-field):focus:invalid{
+  box-shadow: 0 0 10px 7px rgb(255, 137, 2);
+}
 
 @media screen and (max-width: 930px) {
   body {
@@ -93,7 +107,8 @@ body.dark .error-msg {
   }
   .reg-wrapper {
     min-block-size: 50vh;
-    margin-block: calc(var(--size-nav) + 2rem);
+    margin-block-start: calc(var(--size-nav) + 2rem);
+    margin-block-end:1rem;
   }
 }
 @media screen and (min-width: 930px) and (max-width: 1280px) {
@@ -107,6 +122,10 @@ body.dark .error-msg {
       url("../images/main/cook-hero-img-920w.webp");
     background-position: center 30%;
   }
+  .reg-wrapper {
+    margin-block-start: calc(var(--size-nav) + 3rem);
+    margin-block-end:1rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   body {
@@ -119,4 +138,5 @@ body.dark .error-msg {
       url("../images/main/cook-hero-img-1400w.webp");
     background-position: center 30%;
   }
+  
 }

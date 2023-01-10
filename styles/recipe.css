@@ -231,3 +231,11 @@ body.dark .hero-cont {
 .rec-step-text {
   line-height: 1.5;
 }
+@media screen and (min-width:1900px) {
+  h1{
+    font-size:clamp(5rem,6vw,7rem);
+  }
+  .section-title{
+    font-size:clamp(3rem,5vw,4rem);
+  }
+}
