@@ -377,10 +377,10 @@ footer * {
 }
 @media screen and (min-width:1900px){
   html{
-    font-size: 17px;
+    font-size: 18px;
   }
   .container,.container.wide{
-    inline-size:min(85rem,100%);
+    inline-size:min(90rem,100%);
   }
 }
 
